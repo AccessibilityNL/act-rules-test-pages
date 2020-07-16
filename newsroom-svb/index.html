@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="lt-ie9 lt-ie8 pp_newsroom  pp_singlenewsroom" lang="nl"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 pp_newsroom  pp_singlenewsroom" lang="nl"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="pp_newsroom  pp_singlenewsroom" lang="nl"><!--<![endif]--><head>
+<meta name="robots" content="nofollow, noindex">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="files/nr-1071.js"></script><script id="twitter-wjs" src="files/widgets.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Newsroom SVB</title>
+<meta name="robots" content="index,follow">
+<meta name="description" content="Newsroom SVB" lang="nl">
+<meta name="keywords" content="Newsroom,,SVB" lang="nl">
+<meta property="og:image" content="https://content.presspage.com/clients/o_1484.png">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link rel="stylesheet" href="files/modules.css" media="screen, print">
+<link rel="canonical" href="https://pers.svb.nl/">
+<link rel="shortcut icon" href="https://content.presspage.com/favicon/1484.ico?609008461">
+<script type="text/javascript" src="files/jquery-min.js"></script>
+<script type="text/javascript">pp_jquery = jQuery.noConflict( true );var ppLoadLater = {};</script>
+<!--[if IE]><script type="text/javascript" src="//manager.presspage.com/js/PIE.js"></script><![endif]-->
+<script type="text/javascript" src="files/plugins_v4.js"></script>
+<script type="text/javascript" src="files/TrackVisits.js"></script>
+<script type="text/javascript">
+var cookiecontrol = "disabled";
+pp_jquery(document).ready(function() {
+    loadLater();
+});
+</script>
+<script src="files/ga_social_tracking.js"></script>
+<script type="text/javascript">
+    pp_jquery(document).ready(function() {
+        var trackVisits_dynamicArgs = {"trackVisits_sessionId":"769cjmsq6p49o65cpl9g0gj1t5","trackVisits_ip":"213.126.61.234","trackVisits_userAgent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko\/20100101 Firefox\/60.0","trackVisits_referer":""};//End of dynamic args
+        var trackVisists_args = {"trackVisits_accountId":"1484","trackVisits_pageId":"10001440","trackVisits_language":"nl","trackVisits_timezone":"Europe\/Amsterdam"};
+        var apiUri ="https://api.presspage.com/statistics/v0/";
+        TrackVisits.init(trackVisists_args,trackVisits_dynamicArgs,TrackVisits.visitTypes.newsroomPageType, apiUri);
+        TrackVisits.pageLoaded(TrackVisits.visitTypes.newsroomItemType);
+    });
+</script>
+<!--[if lt IE 9]><script src="//manager.presspage.com/js/html5.js"></script><![endif]-->
+<style>
+    .widthcorrection{
+        max-width:940px;
+    }
+    .pp-block-item-title h2,.pp-maintitle,.rssmodule ul li a,.rssmodule ul li a:link,.rssmodule ul li a:visited,.rssmodule ul li a:hover,.td_welkom,.div_date_location,.title_big,.title_big h2,.title_big a:hover,.title_big_headlines,.title_big_headlines a,.pp_bigheadlines_title a,.pp_bigheadlines a,.pp_bigheadlines a:visited,.pp_publishdate,.contact_title,.contact_subtitle,.text_downloads,.citaat,.flickr_title,span.total,.coverage_title a,.coverage_title a:hover,.searchresult_title a,.searchresult_title a:hover,.searchresult_title h2,.umbrella_title h2,.umbrella_title a,.umbrella_title a:hover,.searchresult_readmore,.searchresult_readmore:hover,.form_title,.div_singlecolumn h1,.ppNews-item .ppPicture-b .ppText-b h6 span,.ppNews-b .ppNews-n li a,.ppNews-b .ppNews-n li a:hover,.ppNews-b .ppNews-n li.ppCurrent a,.ppm_headlines_datecontainer,.ppm_headlines_title,.title_companyprofile,.title_companyprofile h1,.subtitle_case,.subtitle_case h2,.title_facts,.ul_facts li,.volglink a,.input_name,.commenter_name,.reaction_div,.title_reactions,.pp-clndr__controls a.pp_icon {
+        color:#1C1C1C;
+    }
+    .pp-clndr__day--active .pp-clndr__item,.pp-clndr__day--active .pp-clndr__item,.pp-clndr__day .pp-clndr__item:hover {
+        border-color:#1C1C1C;
+    }
+    body,.pp-block-item-intro,.pp-block-item-date,.text_latestnews,.pp_coverageoverview_title_left,.text_custommodule,.rssmodule ul li span,.title_summary,.text_boilerplate,.text_quotes,.text_quotes_right,.fan_box .connections,.search_maintitle,.search_resultstitle,.searchresult_text,.div_resultmsg,.text_companyprofile,.ul_facts li span,.shareus_text,#t7_wl, #t7_dl,#t7_hl,#t7_sl, #t7_ml,.pp_headline h3, .pp_headline_umbrella h3 {
+        color:#1C1C1C;
+    }
+    .td_companyprofile,#tags.sphere3d a,div.pollProgressBar,.td_form_submit input,.td_form_submit input, .comment_submit,.pp_sharethis_custom,.pp-block-item-tags a,.pp_multimediacount_icon,a.pp_bigheadlines_tags_link,.pp-clndr__day-current .pp-clndr__item,.pp-clndr__day--has-event .pp-clndr__item:after {
+        background-color:#1C1C1C;
+    }
+    .pp-newsreel-slider-readmore,.div_flag_codes a,.div_flag_codes a:hover,#headlines_extras a,#headlines_extras a:hover,.td_leesverder a,.text_custommodule a,.text_companyprofile a,.text_summary a,.text_boilerplate a,.latestnews_row a,.link_tonewsroom,.pp_bigheadlines_more,.pp_bigheadlines_more a:visited,.text_latestnews_more,.pp_coverage_title_items a{
+        color:#1C1C1C
+    }
+    .text_latestnews a,.text_latestnews a:hover,.emaillink, .download_link,.span_headline a,.pp_bigheadlines_more {
+        color:#1C1C1C
+    }
+    .title_headlines a,.extras_headertitle,.extras_headertitle_right,.extras_newsroom_headertitle_right,.extras_newsroom_headertitle_right a,.pp_coverage_preview_title h3, .pp_coverageoverview_title h3,.pp_coverage_preview_date, .pp_coverageoverview_date,.pp_coverage_preview_source, .pp_coverageoverview_source,#tooltip,.calendar_textarea,.boxgrid h3,.boxgrid a,.h3_coverage,.boxgrid_library a,.boxgrid_library h3,.boxgrid_library_featured a,.boxgrid_library_featured h3,.headlinefeatured_date_text,.headlinecoverage_date_text,.t7_numbs,.t7_numbs_small {
+        color:#ffffff
+    }
+    #maintable{
+        max-width:940px;
+    }
+    .noheader_div{
+        width:940px;
+    }
+    .pp_coverage_preview_box, .pp_coverageoverview_box {
+        background-color:#ffffff;
+        background: rgba(255,255,255,0.85);
+        background: transparent9;
+        zoom:1;
+        -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff)";
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff);
+    }
+    .extras_header{
+        background-color:#ffffff;border:1px solid #000000;
+    }
+    .extras_newsroom_header {
+        background-color:#ffffff;border:1px solid #000000;
+    }
+    .div_extras {
+        background-color:#ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;
+    }
+    .extras_footer {
+        background-color:#ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;
+    }
+    .extras_headertitle {
+        text-align:center;
+    }
+    .extras_headertitle_right,.extras_newsroom_headertitle_right{text-align:center;padding:3px 0 0 0;
+    }
+    #tooltip {
+        background-color:#ffffff;
+    }
+    .calendar_header {
+        border:1px solid #000000;
+    }
+    .calendar_textarea {
+        background-color:#ffffff;
+    }
+    .div_calendar_list {
+        border-bottom: 1px dashed #1C1C1C;
+    }
+    .boxcaption_library,.boxcaption_library_featured {
+        background-color:#ffffff;
+        background: rgba(255,255,255,0.85);
+        background: transparent9;
+        zoom:1;
+        -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff)";
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff);
+    }
+    .pp_coverage_title_items a,.div_flag_codes a,.div_flag_codes a:hover,#headlines_extras a,#headlines_extras a:hover,.td_leesverder a,.text_custommodule a,.text_companyprofile a,.text_summary a,.text_boilerplate a,.latestnews_row a,.link_tonewsroom,.pp_bigheadlines_more,.pp_bigheadlines_more a:visited{
+        color:#1C1C1C
+    }
+    .pp-newsreel-slider-readmore,#title_headlines a,.extras_headertitle,.extras_headertitle_right,.extras_newsroom_headertitle_right,.extras_newsroom_headertitle_right a,.pp_coverage_preview_title h3, .pp_coverageoverview_title h3,.pp_coverage_preview_date, .pp_coverageoverview_date,.pp_coverage_preview_source, .pp_coverageoverview_source,#tooltip,.calendar_textarea,.boxgrid h3,.boxgrid a,.h3_coverage,.boxgrid_library a,.boxgrid_library h3,.boxgrid_library_featured a,.boxgrid_library_featured h3,.headlinefeatured_date_text,.headlinecoverage_date_text,.t7_numbs,.t7_numbs_small {
+        color:#ffffff
+    }
+    *+html .pp_flexslider {
+        width:620px;
+    }
+    *+html .pp_gridcontainer_gallery, *+html .pp_gridcontainer_slideshare, *+html .pp_gridcontainer_video {
+        width:620px;
+    }
+    .volgdiv,.volgdiv_right {
+        border:1px solid #ffffff;
+    }
+    .pp_bottommodule_header{background-color:#ffffff;border:1px solid #1C1C1C;
+    }
+    .td_extras_content {
+        border:1px solid #1C1C1C;
+    }
+</style>
+<link href="files/css.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="files/svb-style.css" type="text/css">
+<!--[if IE 9]>
+<link rel="stylesheet" href="//presspage-production-content.s3.amazonaws.com/templates/503/1484/ie-9.css?515078" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="files/print.css" media="print" type="text/css">
+
+<script type="text/javascript" src="files/svb-main.js"></script>
+<script type="text/javascript" src="files/ppcl-script.js"></script><script type="text/javascript" src="files/addthis_widget.js"></script></head>
+<body class="fontsize1">
+<a href="#pp-main" class="pp-hide-text pp-skip-link" lang="en">Skip to main content</a>
+<h1 class="pp-newsroom-pagetitle pp-visually-hidden">Newsroom SVB</h1>
+<div class="pp-bodywrapper">
+<div class="pp-allcontainer">
+<div id="resposive-handler" style="top: -10000px; left: -10000px;" class="ppcl-wrapper">
+    <div class="show-on-phone-portrait"></div>
+    <div class="show-on-tablet-portrait"></div>
+    <div class="show-on-tablet-landscape"></div>
+</div>
+
+
+
+
+
+<div id="skiplinks" class="ppcl-wrapper">
+    <div class="row">
+        <a href="#languagelist">Ga direct naar&nbsp;Taalkeuze</a>
+        <a href="#inloglink">Ga direct naar&nbsp;Inloggen</a>
+        <a href="#questionform_q">Ga direct naar&nbsp;Zoekveld</a>
+        <a href="#maincontentSkip">Ga direct naar&nbsp;Tekst</a>
+        <a href="#nav_footerSkip">Ga direct naar&nbsp;Algemeen menu</a>
+    </div>
+</div>
+<!-- PAGE TYPE = Home -->
+<div class="layout-full-width pt-home thema-corporate ppcl-wrapper">
+    <header class="l-header">
+        <div class="row">
+            <section class="top-header">
+                <div class="svb-logo">
+                    <a href="https://www.svb.nl/int/nl/index.jsp">
+                        <!--<img lanl-old="nl" alt="logo SVB Sociale Verzekeringsbank voor het leven" src="//www.nl-oldb.nl/images/svblogo_print.jpg" class="svblogo-print">-->
+                    </a>
+                </div>
+                <div class="language-select">
+                    <label for="languagelist">Kies een taal</label>
+                    <select class="nl" id="languagelist">
+                        <option value="nl" selected="selected" lang="nl">Nederlands</option>
+                        <option data-hef="//www.svb.nl/int/en/index.jsp" title="English" value="en" lang="en">
+                            English
+                        </option>
+                        <option data-hef="//www.svb.nl/int/de/index.jsp" title="Deutsch" value="de" lang="de">
+                            Deutsch
+                        </option>
+                        <option data-hef="//www.svb.nl/int/fr/index.jsp" title="Français" value="fr" lang="fr">
+                            Français
+                        </option>
+                        <option data-hef="//www.svb.nl/int/es/index.jsp" title="Español" value="es" lang="es">
+                            Español
+                        </option>
+                        <option data-hef="//www.svb.nl/int/pl/index.jsp" title="Polski" value="pl" lang="pl">
+                            Polski
+                        </option>
+                        <option data-hef="//www.svb.nl/int/tr/index.jsp" title="Türkçe" value="tr" lang="tr">
+                            Türkçe
+                        </option>
+                    </select>
+                </div>
+                <div class="digid-login short" style="display: none;">
+                    <div class="login-btn">
+                        <figure class="digid-logo">
+                            <img src="files/digi-logo.png" alt="DigiD" title="DigiD">
+                        </figure>
+                        <a href="" class="mijn-svb-login login-info" id="inloglink" tabindex="0" aria-haspopup="true">Inloggen
+                            met DigiD</a>
+                    </div>
+                    <div class="drop-down">
+                        <a href="" class="close" id="close" tabindex="-1">Sluiten</a>
+                        <ul>
+                            <li><a class=" sitestatdigid" href="https://www.svb.nl/gaia/mijnsvb/pages/entree.jsf" title="Aanvragen, gegevens bekijken of wijzigen. Deze link opent in een nieuw venster." tabindex="-1">Inloggen Mijn SVB
+                                <script type="text/json">
+                                    {sitestatid: "DigiD_raadplegen",type: "clickout", taal: "nl", subsite: "_geen"}
+                                </script>
+                            </a></li>
+                            <li><a class=" sitestatdigid" href="https://www.svb.nl/gaia2/mijnpgb/secure/flow/budgethouder/gebruiker/inloggen" title="Aanvragen, gegevens bekijken of wijzigen. Deze link opent in een nieuw venster." tabindex="-1">Inloggen Mijn PGB als budgethouder
+                                <script type="text/json">
+                                    {sitestatid: "ssp.verantwoording.budgethouder",type: "clickout", taal: "nl", subsite: "_geen"}
+                                </script>
+                            </a></li>
+                            <li><a class=" sitestatdigid" href="https://www.svb.nl/gaia2/mijnpgb/secure/flow/vertegenwoordiger/gebruiker/inloggen" title="Aanvragen, gegevens bekijken of wijzigen. Deze link opent in een nieuw venster." tabindex="-1">Inloggen Mijn PGB als vertegenwoordiger
+                                <script type="text/json">
+                                    {sitestatid: "ssp.verantwoording.vertegenwoordiger",type: "clickout", taal: "nl", subsite: "_geen"}
+                                </script>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+
+
+            </section>
+
+        </div>
+
+    </header>
+
+    <div class="l-bodyl">
+
+        <section class="search">
+            <div class="row">
+                <div class="hero">
+                    <!--&lt;!&ndash;googleon: index&ndash;&gt;-->
+                    <!--<h1>De Sociale Verzekeringsbank</h1>-->
+                    <!--<p>De uitvoerder van volksverzekeringen in Nederland.</p>-->
+                    <!--&lt;!&ndash;googleoff: index&ndash;&gt;-->
+
+                    <!-- THE PLACE HOLDER OF THE SEARCH FIELD NEEDS TO BE CHANGED ALSO IN THE SVG-MAIN.js -->
+                    <form role="form" id="questionform" class="questionform" action="//pers.svb.nl/" method="get" accept-charset="UTF-8">
+                        <fieldset>
+                            <legend>Zoeken</legend>
+                            <label for="questionform_q">Zoeken</label>
+                            <input id="questionform_q" name="q" placeholder="Vul 1 of 2 woorden in" title="Vul 1 of 2 woorden in" class="questionform_q" data-ph-small="Zoek binnen svb.nl" data-ph-large="Vul 1 of 2 woorden in" autocomplete="off" style="color: silver;" value="Vul 1 of 2 woorden in" type="text">
+                            <div class="button-wrapper">
+                                <input id="questionform_b" class="button" title="Zoek" value="Zoeken" type="submit">
+                            </div>
+                            <span id="questionform_error"></span>
+                            <input value="nl" name="taal" type="hidden">
+                            <input value="_geen" name="regeling" type="hidden">
+                            <input value="true" name="doSearch" type="hidden">
+                            <input value="regeling" name="getfields" type="hidden">
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <ul id="breadcrumbs">
+            <li><a href="https://www.svb.nl/int/nl/index.jsp"><abbr title="Sociale Verzekeringsbank">SVB </abbr>home</a></li>
+            <!--<li><a href="//pers.nl-oldb.nl/"><abbr title="Newsroom"></abbr>Newsroom</a></li>-->
+            <li class="pp_breadcrumb_last">Newsroom</li>
+
+        </ul>
+    </div>
+
+</div>
+<main id="pp-main" role="main">
+<div id="maindiv">
+<div class="maindiv-extra">
+    <div class="pp-content-top">
+            <div class="ppNews-b pp_moduleblock is-visible" tabindex="0" role="region" aria-label="News carousel">
+                <div class="ppNews-content pp_two-of-three_newsreel">
+
+
+                <div class="ppNews-item" aria-hidden="true" tabindex="-1" style="display: none;">
+                <div class="release_tags">
+                            <div class="floatLeft release_tags_nieuws release_tags_">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=nieuws">nieuws</a>
+                            </div>
+                            <div class="floatLeft release_tags_svb release_tags_1">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=svb">svb</a>
+                            </div>
+                            <div class="floatLeft release_tags_sociale verzekeringsbank release_tags_2">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=sociale%20verzekeringsbank">sociale verzekeringsbank</a>
+                            </div>
+                            <div class="floatLeft release_tags_pgb release_tags_3">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=pgb">pgb</a>
+                            </div>
+                            <div class="floatLeft release_tags_kinderbijslag release_tags_4">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=kinderbijslag">kinderbijslag</a>
+                            </div></div>
+                    <div class="ppPicture-b" style="background-image:url(//content.presspage.com/uploads/1484/800_publieksjaarverslag2017v2-2.png?10000);">
+                        <div class="ppText-b">
+                            <h3 class="pp_newsreel_heading"><a href="https://pers.svb.nl/publieksjaarverslag-2017/">Publieksjaarverslag 2017 </a></h3>
+                            <p>Vanaf vandaag is ons Publieksjaarverslag 2017<span class="substring_dots"> …</span> <a href="https://pers.svb.nl/publieksjaarverslag-2017/" title="Publieksjaarverslag 2017 ">Lees meer
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppNews-item" aria-hidden="true" tabindex="-1" style="display: none;">
+                <div class="release_tags">
+                            <div class="floatLeft release_tags_blogs release_tags_4">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=blogs">blogs</a>
+                            </div></div>
+                    <div class="ppPicture-b" style="background-image:url(//content.presspage.com/uploads/1484/800_meisjeopschoot.jpg?10000);">
+                        <div class="ppText-b">
+                            <h3 class="pp_newsreel_heading"><a href="https://pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/">BLOG: de SVB op de Supportbeurs: denken in mogelijkheden </a></h3>
+                            <p>Door Asha Eijkelhof, relatiebeheerder<span class="substring_dots"> …</span> <a href="https://pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/" title="BLOG: de SVB op de Supportbeurs: denken in mogelijkheden ">Lees meer
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppNews-item" aria-hidden="false" tabindex="0" style="display: block;">
+                <div class="release_tags">
+                            <div class="floatLeft release_tags_nieuws release_tags_4">
+                                <a class="release_tags_link" href="https://pers.svb.nl/?h=1&amp;t=nieuws">nieuws</a>
+                            </div></div>
+                    <div class="ppPicture-b" style="background-image:url(//content.presspage.com/uploads/1484/800_tablet.jpg?10000);">
+                        <div class="ppText-b">
+                            <h3 class="pp_newsreel_heading"><a href="https://pers.svb.nl/bescherming-van-de-privacy-van-onze-klanten/">Bescherming van de privacy van onze klanten </a></h3>
+                            <p>Vanaf vandaag is de Algemene Verordening<span class="substring_dots"> …</span> <a href="https://pers.svb.nl/bescherming-van-de-privacy-van-onze-klanten/" title="Bescherming van de privacy van onze klanten ">Lees meer
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="ppMediaShadow"></div>
+            </div>
+            <ul class="ppNews-n pp_one-of-three_newsreel">
+
+            <li class="pp_newsreel_titlelist">
+                <a class="ppUnit" href="https://pers.svb.nl/publieksjaarverslag-2017/">
+                            <div class="pp-newsreel-list__date">
+                                <div class="pp_date_day">05</div>
+                                <div class="pp_date_month">juni</div>
+                                <div class="pp_date_year">2018</div>
+                            </div>
+
+                    <div class="pp_newsreel_title">Publieksjaarverslag 2017 </div>
+                </a>
+            </li>
+            <li class="pp_newsreel_titlelist">
+                <a class="ppUnit" href="https://pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/">
+                            <div class="pp-newsreel-list__date">
+                                <div class="pp_date_day">04</div>
+                                <div class="pp_date_month">juni</div>
+                                <div class="pp_date_year">2018</div>
+                            </div>
+
+                    <div class="pp_newsreel_title">BLOG: de SVB op de Supportbeurs: denken in mogelijkheden </div>
+                </a>
+            </li>
+            <li class="pp_newsreel_titlelist ppCurrent">
+                <a class="ppUnit" href="https://pers.svb.nl/bescherming-van-de-privacy-van-onze-klanten/">
+                            <div class="pp-newsreel-list__date">
+                                <div class="pp_date_day">25</div>
+                                <div class="pp_date_month">mei</div>
+                                <div class="pp_date_year">2018</div>
+                            </div>
+
+                    <div class="pp_newsreel_title">Bescherming van de privacy van onze klanten </div>
+                </a>
+            </li>
+            </ul>
+            </div></div>
+<div id="maintable" class="maintables ">
+
+
+
+
+        <div class="pp-main-column pp_table">
+    <div class="top_main_client"></div>
+    <div class="content_main_client content_main_client_right">
+
+
+                <script type="text/javascript" src="files/headlines_reel.js"></script>
+    <script type="text/javascript">
+        // auto-rotation
+        var slide_ppMedia_down = true;
+        var slide_ppMedia_lock = false;
+        var slide_ppMedia_timer_id = setInterval(function(){
+            var linkActive = pp_jquery(".ppNews-n li.ppCurrent");
+            if (slide_ppMedia_down) {
+                linkNext = linkActive.next().find('a');
+
+                if (linkNext.length == 0) {
+                    linkNext = linkActive.prev().find('a');
+                    slide_ppMedia_down = false;
+                }
+            } else {
+                linkNext = linkActive.prev().find('a');
+                if (linkNext.length == 0) {
+                    linkNext = linkActive.next().find('a');
+                    slide_ppMedia_down = true;
+                }
+            }
+            if (linkNext.length != 0) {
+                slide_ppMedia_lock = true;
+                try {
+                    linkNext.mouseover();
+                } finally{
+                    slide_ppMedia_lock = false;
+                }
+            }
+        }, 4000);
+
+        pp_jquery(".ppNews-n li").each(function(index) {
+                pp_jquery("> a", this).hover(function() {
+                if (!slide_ppMedia_lock)
+                    clearInterval(slide_ppMedia_timer_id);
+                return false;
+            });
+        });
+
+        pp_jquery( function( pp_jquery ) {
+            ppHeadlinesReel.init();
+        });
+    </script>
+        <script type="text/javascript">
+        function switchHeadlines(headlineset, direction){
+
+                var current_headlineset = Number(pp_jquery('#current_headlineset_' + headlineset).val());
+                var headlinesets = Number(pp_jquery('#total_headlinesets_' + headlineset).val());
+                var divid = "#headlineset_" + headlineset + "_" + current_headlineset;
+
+                  pp_jquery('' + divid).fadeOut('fast', function() {
+
+                    if(direction == "next"){
+                    current_headlineset = current_headlineset + 1;
+                    } else {
+                    current_headlineset = current_headlineset - 1;
+                    }
+                    // Set in hidden field
+                    pp_jquery('#current_headlineset_' + headlineset).val(current_headlineset);
+
+                    var newdivid = "#headlineset_" + headlineset + "_" + current_headlineset;
+
+                    pp_jquery('' + newdivid).fadeIn('fast', function() {
+                    // Animation complete.
+                    });
+
+                    if(current_headlineset == headlinesets){
+                        var nextbutton = document.getElementById('nextbutton_set' + headlineset);
+                        var nexthref = document.getElementById('nexthref_set' + headlineset);
+                        pp_jquery(nextbutton).attr('class', 'pp_headlines_next_disabled');
+                        nexthref.removeAttribute("href");
+                        nextbutton.removeAttribute("onmouseover");
+                        nextbutton.removeAttribute("onmouseout");
+                    }
+                    if(current_headlineset == 1){
+                        var previousbutton = document.getElementById('previousbutton_set' + headlineset);
+                        var previoushref = document.getElementById('previoushref_set' + headlineset);
+                        pp_jquery(previousbutton).attr('class', 'pp_headlines_prev_disabled');
+                        previoushref.removeAttribute("href");
+                        previousbutton.removeAttribute("onmouseover");
+                        previousbutton.removeAttribute("onmouseout");
+
+                    }
+                    if(current_headlineset > 1){
+                        var previousbutton = document.getElementById('previousbutton_set' + headlineset);
+                        var previoushref = document.getElementById('previoushref_set' + headlineset);
+                        pp_jquery(previousbutton).attr('class', 'pp_headlines_prev');
+                        previoushref.setAttribute('href', 'javascript:switchHeadlines("' + headlineset + '", "previous")');
+                        previousbutton.setAttribute("onmouseover", "this.src='//manager.presspage.com/images/headlines_previous_over.png'");
+                        previousbutton.setAttribute("onmouseout", "this.src='//manager.presspage.com/images/headlines_previous_up.png'");
+                    }
+                    if(current_headlineset < headlinesets){
+                        var nextbutton = document.getElementById('nextbutton_set' + headlineset);
+                        var nexthref = document.getElementById('nexthref_set' + headlineset);
+                        pp_jquery(nextbutton).attr('class', 'pp_headlines_next');
+                        nexthref.setAttribute('href', 'javascript:switchHeadlines("' + headlineset + '", "next")');
+                        nextbutton.setAttribute("onmouseover", "this.src='//manager.presspage.com/images/headlines_next_over.png'");
+                        nextbutton.setAttribute("onmouseout", "this.src='//manager.presspage.com/images/headlines_next_up.png'");
+                    }
+
+                  });
+
+                document.getElementById("current_headlineset_" + headlineset).value = current_headlineset;
+        }
+        </script>
+
+
+
+<script type="text/javascript">
+pp_jquery(document).ready(function(){
+    pp_jquery('.boxgrid_library_featured.caption_library_featured').hover(function(){
+        pp_jquery(".cover", this).stop().animate({top:'48%'},{queue:false,duration:160});
+    }, function() {
+        pp_jquery(".cover", this).stop().animate({top:'70%'},{queue:false,duration:160});
+    });
+});
+</script>
+<div id="pp-headline-1525968" class="pp-headline-list ppmodule_headlines pp_moduleblock ppheadline-Meer nieuws">
+<div class="headlines_Meer nieuws" id="headlines_1525968">
+<div class="table_headlines">
+    <div class="table_headlines_td">
+        <h2 class="title_big_headlines">
+            <a href="https://pers.svb.nl/?h=1&amp;t=nieuws">Meer nieuws</a>
+        </h2>
+    </div>
+
+<div class="pp_headlines_iconset">
+
+        <a class="td_rss_icon pp_headlines_rss" title="RSS" target="_blank" href="https://pers.svb.nl/tagfeed/nl/tags/nieuws">
+            <span class="pp-visually-hidden">RSS feed - Meer nieuws <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+        </a>
+        <a class="td_headlines_icon pp_headlines_icon" title="Bekijk alle headlines" href="https://pers.svb.nl/?h=1&amp;t=nieuws">
+            <span class="pp-visually-hidden">Bekijk alle headlines - Meer nieuws</span>
+        </a>
+
+    <div class="headlines_prevnext">
+        <a id="nexthref_set1" href="javascript:switchHeadlines('1',%20'next');">
+            <div class="pp_headlines_next" id="nextbutton_set1" title="Eerder nieuws">
+                <span class="pp-visually-hidden">Eerder nieuws</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="headlines_prevnext">
+        <a id="previoushref_set1">
+            <div class="pp_headlines_prev_disabled" id="previousbutton_set1" title="Recenter nieuws">
+                <span class="pp-visually-hidden">Recenter nieuws</span>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+<div class="div_headlines">
+    <div class="headlinesets" id="headlineset_1_1">
+
+                    <a title="Studeren in het buitenland?" href="https://pers.svb.nl/ingeschreven-voor-een-studie-in-het-buitenland/" class="td_headlines headline_b" id="tdbackground-290897">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">17</div>
+                                        <div class="pp_date_month">mei</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Studeren in het buitenland?</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Gezamenlijke dienstverlening bij de gemeente" href="https://pers.svb.nl/gezamenlijke-dienstverlening-bij-de-gemeente/" class="td_headlines headline_a" id="tdbackground-287634">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">26</div>
+                                        <div class="pp_date_month">apr</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Gezamenlijke dienstverlening bij de gemeente</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Panelleden gezocht voor online PGB-community" href="https://pers.svb.nl/panelleden-gezocht-voor-online-pgb-community/" class="td_headlines headline_b" id="tdbackground-287095">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">23</div>
+                                        <div class="pp_date_month">apr</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Panelleden gezocht voor online PGB-community</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Nieuwe checklist 'life event' beschikbaar op SVB.nl " href="https://pers.svb.nl/nieuwe-checklist-life-event-beschikbaar-op-svbnl/" class="td_headlines headline_a" id="tdbackground-286867">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">20</div>
+                                        <div class="pp_date_month">apr</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuwe checklist 'life event' beschikbaar op SVB.nl </h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Succesvolle datamigratie door de SVB" href="https://pers.svb.nl/succesvolle-datamigratie-door-de-svb/" class="td_headlines headline_b" id="tdbackground-285600">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">10</div>
+                                        <div class="pp_date_month">apr</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Succesvolle datamigratie door de SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_2">
+
+                    <a title="Video 'Het verhaal van de SVB'" href="https://pers.svb.nl/het-verhaal-van-de-svb/" class="td_headlines headline_a" id="tdbackground-285177">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">06</div>
+                                        <div class="pp_date_month">apr</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Video 'Het verhaal van de SVB'</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Gebruik buitenlands identificatienummer bij vermogensonderzoek " href="https://pers.svb.nl/gebruik-buitenlands-identificatienummer-bij-vermogensonderzoek/" class="td_headlines headline_b" id="tdbackground-284196">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">26</div>
+                                        <div class="pp_date_month">mrt</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Gebruik buitenlands identificatienummer bij vermogensonderzoek </h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Gezamenlijke dienstverlening in Leeuwarden" href="https://pers.svb.nl/gezamenlijke-dienstverlening-in-leeuwarden/" class="td_headlines headline_a" id="tdbackground-283549">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">20</div>
+                                        <div class="pp_date_month">mrt</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Gezamenlijke dienstverlening in Leeuwarden</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="PGB verantwoordingen Wmo en Jeugdwet 2017" href="https://pers.svb.nl/pgb-verantwoordingen-wmo-en-jeugdwet-2017/" class="td_headlines headline_b" id="tdbackground-283189">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">16</div>
+                                        <div class="pp_date_month">mrt</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>PGB verantwoordingen Wmo en Jeugdwet 2017</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Nieuwe editie magazine Aanspraak" href="https://pers.svb.nl/nieuwe-editie-magazine-aanspraak/" class="td_headlines headline_a" id="tdbackground-283089">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">15</div>
+                                        <div class="pp_date_month">mrt</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuwe editie magazine Aanspraak</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_3">
+
+                    <a title="HR directeur Stefan van de Griendt aan het woord over mobiliteit, generaties en bevlogenheid." href="https://pers.svb.nl/hr-directeur-stefan-van-de-griendt-aan-het-woord-over-mobiliteit-generaties-en-bevlogenheid/" class="td_headlines headline_b" id="tdbackground-281688">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">06</div>
+                                        <div class="pp_date_month">mrt</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>HR directeur Stefan van de Griendt aan het woord over mobiliteit, generaties en bevlogenheid.</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Maatwerk voor Amsterdammers" href="https://pers.svb.nl/maatwerk-voor-amsterdammers/" class="td_headlines headline_a" id="tdbackground-274607">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">23</div>
+                                        <div class="pp_date_month">feb</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Maatwerk voor Amsterdammers</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Nieuwe voorzitter Sociale Verzekeringsbank" href="https://pers.svb.nl/nieuwe-voorzitter-sociale-verzekeringsbank/" class="td_headlines headline_b" id="tdbackground-269321">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">09</div>
+                                        <div class="pp_date_month">feb</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuwe voorzitter Sociale Verzekeringsbank</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Succesvolle pilot voor Anw-klanten" href="https://pers.svb.nl/succesvolle-pilot-voor-anw-klanten/" class="td_headlines headline_a" id="tdbackground-267859">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">31</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Succesvolle pilot voor Anw-klanten</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Staatssecretaris Tamara van Ark (SZW) bezoekt de SVB" href="https://pers.svb.nl/staatssecretaris-tamara-van-ark-szw-bezoekt-de-svb/" class="td_headlines headline_b" id="tdbackground-267470">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">30</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Staatssecretaris Tamara van Ark (SZW) bezoekt de SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_4">
+
+                    <a title="15e 'Nooit meer Auschwitz' lezing" href="https://pers.svb.nl/15e-nooit-meer-auschwitz-lezing/" class="td_headlines headline_a" id="tdbackground-267026">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">24</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>15e 'Nooit meer Auschwitz' lezing</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="PGB en de Zorgverzekeringswet" href="https://pers.svb.nl/pgb-en-de-zorgverzekeringswet/" class="td_headlines headline_b" id="tdbackground-266249">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">18</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>PGB en de Zorgverzekeringswet</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB kindernamen 2017" href="https://pers.svb.nl/svb-kindernamen-2017/" class="td_headlines headline_a" id="tdbackground-265078">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">11</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB kindernamen 2017</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Rijksoverheid.nl biedt overzicht rondom ‘life events’" href="https://pers.svb.nl/rijksoverheidnl-biedt-overzicht-rondom-life-events/" class="td_headlines headline_b" id="tdbackground-265309">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">11</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Rijksoverheid.nl biedt overzicht rondom ‘life events’</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB kindernamen en privacy" href="https://pers.svb.nl/svb-kindernamen-en-privacy/" class="td_headlines headline_a" id="tdbackground-265384">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">10</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB kindernamen en privacy</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_5">
+
+                    <a title="Kindernamen over 2017: privacy extra belangrijk" href="https://pers.svb.nl/kindernamen-over-2017-met-oog-voor-privacy/" class="td_headlines headline_b" id="tdbackground-263296">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">09</div>
+                                        <div class="pp_date_month">jan</div>
+                                        <div class="pp_date_year">2018</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Kindernamen over 2017: privacy extra belangrijk</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Voorzitter Maarten Schurink benoemd als SG bij Binnenlandse Zaken" href="https://pers.svb.nl/voorzitter-maarten-schurink-benoemd-als-sg-bij-binnenlandse-zaken/" class="td_headlines headline_a" id="tdbackground-263066">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">15</div>
+                                        <div class="pp_date_month">dec</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Voorzitter Maarten Schurink benoemd als SG bij Binnenlandse Zaken</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Persoonlijk contact bij laaggeletterdheid" href="https://pers.svb.nl/persoonlijk-contact-bij-laaggeletterdheid/" class="td_headlines headline_b" id="tdbackground-262655">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">12</div>
+                                        <div class="pp_date_month">dec</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Persoonlijk contact bij laaggeletterdheid</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Hoe komt de SVB kindernamenlijst tot stand?" href="https://pers.svb.nl/hoe-komt-de-svb-kindernamenlijst-tot-stand/" class="td_headlines headline_a" id="tdbackground-265382">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">12</div>
+                                        <div class="pp_date_month">dec</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Hoe komt de SVB kindernamenlijst tot stand?</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Benoemingen bij de SVB" href="https://pers.svb.nl/benoemingen-bij-de-svb/" class="td_headlines headline_b" id="tdbackground-260913">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">06</div>
+                                        <div class="pp_date_month">dec</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Benoemingen bij de SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_6">
+
+                    <a title="Nieuwe uitgave van magazine Aanspraak" href="https://pers.svb.nl/nieuwe-uitgave-van-magazine-aanspraak/" class="td_headlines headline_a" id="tdbackground-260367">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">01</div>
+                                        <div class="pp_date_month">dec</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuwe uitgave van magazine Aanspraak</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="YouBeDo en de SVB" href="https://pers.svb.nl/youbedo/" class="td_headlines headline_b" id="tdbackground-258471">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">24</div>
+                                        <div class="pp_date_month">nov</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>YouBeDo en de SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="PGB: goed voorbereid voor 2018" href="https://pers.svb.nl/pgb-goed-voorbereid-voor-2018/" class="td_headlines headline_a" id="tdbackground-258453">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">23</div>
+                                        <div class="pp_date_month">nov</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>PGB: goed voorbereid voor 2018</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Wonen mensen wel waar ze wonen?" href="https://pers.svb.nl/wonen-mensen-wel-waar-ze-wonen/" class="td_headlines headline_b" id="tdbackground-256476">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">10</div>
+                                        <div class="pp_date_month">nov</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Wonen mensen wel waar ze wonen?</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="AOW in het buitenland: weet hoe het zit" href="https://pers.svb.nl/aow-in-het-buitenland-weet-hoe-het-zit/" class="td_headlines headline_a" id="tdbackground-254860">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">07</div>
+                                        <div class="pp_date_month">nov</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>AOW in het buitenland: weet hoe het zit</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_7">
+
+                    <a title="Nieuwe leden Raad van Advies " href="https://pers.svb.nl/nieuwe-leden-raad-van-advies-svb/" class="td_headlines headline_b" id="tdbackground-254859">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">31</div>
+                                        <div class="pp_date_month">okt</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuwe leden Raad van Advies </h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Hackathon levert UWV en SVB mooie oplossingen op" href="https://pers.svb.nl/hackathon-levert-uwv-en-svb-mooie-oplossingen-op/" class="td_headlines headline_a" id="tdbackground-254697">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">30</div>
+                                        <div class="pp_date_month">okt</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Hackathon levert UWV en SVB mooie oplossingen op</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Niet (voldoende) digitaal vaardig en toch online aan de slag?" href="https://pers.svb.nl/niet-voldoende-digitaal-vaardig-en-toch-online-aan-de-slag/" class="td_headlines headline_b" id="tdbackground-246978">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">20</div>
+                                        <div class="pp_date_month">okt</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Niet (voldoende) digitaal vaardig en toch online aan de slag?</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB-Week van de informatiebeveiliging &amp; privacy" href="https://pers.svb.nl/svb-week-van-de-informatiebeveiliging--privacy/" class="td_headlines headline_a" id="tdbackground-244006">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">03</div>
+                                        <div class="pp_date_month">okt</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB-Week van de informatiebeveiliging &amp; privacy</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB wijst mensen in buitenland  op 'vergeten AOW'" href="https://pers.svb.nl/svb-wijst-mensen-in-buitenland--op-vergeten-aow/" class="td_headlines headline_b" id="tdbackground-243224">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">28</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB wijst mensen in buitenland  op 'vergeten AOW'</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_8">
+
+                    <a title="Dienstverlening PGB: een kwestie van continu verbeteren" href="https://pers.svb.nl/dienstverlening-pgb-een-kwestie-van-continu-verbeteren/" class="td_headlines headline_a" id="tdbackground-243223">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">28</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Dienstverlening PGB: een kwestie van continu verbeteren</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Special voor PGB budgethouders" href="https://pers.svb.nl/verbeteringen-dienstverlening-pgb/" class="td_headlines headline_b" id="tdbackground-241755">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">19</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Special voor PGB budgethouders</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB winnaar RBB Award" href="https://pers.svb.nl/svb-winnaar-rbb-award/" class="td_headlines headline_a" id="tdbackground-238224">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">14</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB winnaar RBB Award</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Taalambassadeurs inspireren SVB" href="https://pers.svb.nl/taalambassadeurs-inspireren-svb/" class="td_headlines headline_b" id="tdbackground-235519">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">08</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Taalambassadeurs inspireren SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="UWV en SVB organiseren Hackathon 2017" href="https://pers.svb.nl/uwv-en-svb-hackathon-2017/" class="td_headlines headline_a" id="tdbackground-234224">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">05</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>UWV en SVB organiseren Hackathon 2017</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_9">
+
+                    <a title="Verplichtingen bij een nabestaandenuitkering: herinneren helpt" href="https://pers.svb.nl/verplichtingen-bij-een-nabestaandenuitkering-herinneren-helpt/" class="td_headlines headline_b" id="tdbackground-233792">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">04</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Verplichtingen bij een nabestaandenuitkering: herinneren helpt</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Gezinsbudget (i- PGB) zorgt voor minder administratie" href="https://pers.svb.nl/gezinsbudget-i--pgb-zorgt-voor-minder-administratie/" class="td_headlines headline_a" id="tdbackground-232715">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">02</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Gezinsbudget (i- PGB) zorgt voor minder administratie</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Nieuw sociaal zekerheidsverdrag tussen Nederland en China" href="https://pers.svb.nl/nieuw-sociaal-zekerheidsverdrag-tussen-nederland-en-china/" class="td_headlines headline_b" id="tdbackground-233546">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">01</div>
+                                        <div class="pp_date_month">sep</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Nieuw sociaal zekerheidsverdrag tussen Nederland en China</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Studeren in het buitenland" href="https://pers.svb.nl/studeren-in-het-buitenland/" class="td_headlines headline_a" id="tdbackground-231975">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">18</div>
+                                        <div class="pp_date_month">aug</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Studeren in het buitenland</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="‘De mens achter de oorlogsgeschiedenis van Nederlands-Indië’" href="https://pers.svb.nl/de-mens-achter-de-oorlogsgeschiedenis-van-nederlands-indie/" class="td_headlines headline_b" id="tdbackground-231354">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">15</div>
+                                        <div class="pp_date_month">aug</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>‘De mens achter de oorlogsgeschiedenis van Nederlands-Indië’</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div><div class="headlinesets" style="display:none;" id="headlineset_1_10">
+
+                    <a title="Verschillende schrijfwijzen van kindernamen" href="https://pers.svb.nl/verschillende-schrijfwijzen-van-kindernamen/" class="td_headlines headline_a" id="tdbackground-260881">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">09</div>
+                                        <div class="pp_date_month">aug</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Verschillende schrijfwijzen van kindernamen</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Bijna 325.000 burgers gebruiken maandelijks digitale portalen SVB" href="https://pers.svb.nl/bijna-325000-burgers-gebruiken-maandelijks-digitale-portalen-svb/" class="td_headlines headline_b" id="tdbackground-229896">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">03</div>
+                                        <div class="pp_date_month">aug</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Bijna 325.000 burgers gebruiken maandelijks digitale portalen SVB</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB genomineerd voor RBB Award 2017" href="https://pers.svb.nl/svb-genomineerd-voor-rbb-award-2017/" class="td_headlines headline_a" id="tdbackground-221296">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">21</div>
+                                        <div class="pp_date_month">jul</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB genomineerd voor RBB Award 2017</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="SVB introduceert innovatiewerkgroep Novum" href="https://pers.svb.nl/svb-introduceert-innovatiewerkgroep-novum/" class="td_headlines headline_b" id="tdbackground-218162">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">19</div>
+                                        <div class="pp_date_month">jul</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>SVB introduceert innovatiewerkgroep Novum</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+
+
+                    <a title="Kindernamen: Emma en Daan weer nummer 1" href="https://pers.svb.nl/kindernamen-emma-en-daan-weer-nummer-1/" class="td_headlines headline_a" id="tdbackground-214529">
+                        <div class="">
+
+                        <div class="pp_publishdate">
+                                        <div class="pp_date_day">14</div>
+                                        <div class="pp_date_month">jul</div>
+                                        <div class="pp_date_year">2017</div>
+
+                        </div>
+
+                        <div class="pp_date_divider span_publishdate_divider">-</div>
+                        <div class="pp_headline "><h3>Kindernamen: Emma en Daan weer nummer 1</h3></div>
+                        <div class="pp_headline_icon"></div>
+                        </div>
+                    </a>
+                </div></div></div></div>
+<form name="hiddenfields">
+    <input name="current_headlineset_1" id="current_headlineset_1" value="1" type="hidden">
+    <input name="total_headlinesets_1" id="total_headlinesets_1" value="10" type="hidden">
+</form>
+
+						<div class="text_custommodule pp_moduleblock"><script type="text/javascript" src="files/sitestat.html"></script></div>
+					        <div id="pp-headline-2684949" class="pp-headline-scroll ppmodule_headlines pp_moduleblock ppheadline-Blogs en verhalen">
+            <h2 class="title_big_headlines floatLeft">
+                <a href="https://pers.svb.nl/?h=1&amp;t=blogs">Blogs en verhalen</a>
+            </h2>
+
+            <a target="_blank" href="https://pers.svb.nl/tagfeed/nl/tags/blogs" title="RSS feed - Blogs en verhalen" class="pp_bigheadlines_buttons_rss">
+                <span class="pp-visually-hidden">RSS feed - Blogs en verhalen <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+            </a>
+            <a href="https://pers.svb.nl/?h=1&amp;t=blogs" title="Bekijk alle headlines" class="pp_bigheadlines_buttons_allheadlines">
+                <span class="pp-visually-hidden">Bekijk alle headlines - Blogs en verhalen</span>
+            </a>
+
+            <div class="pp_bigheadlines_container pp_bigheadlines_height-2684949" style="height: 749px;">
+                <div class="pp_big_headlines_item_container pp_bigheadlines_items-2684949">
+
+                    <div class="mm_listitem">
+                    <div class="pp_unit pp_one-of-four pp_bigheadlines_id-2684949">
+                        <div class="pp_bigheadlines_image" onclick="window.location='//pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/'" style="background-image:url(//content.presspage.com/uploads/1484/500_meisjeopschoot.jpg?10000);" aria-hidden="true" role="presentation" tabindex="-1"></div>
+                    </div>
+                    <div class="pp_unit pp_three-of-four pp_bigheadlines_data">
+                        <div class="pp_bigheadlines_date">
+                            <div class="pp_date_day">04</div>
+                            <div class="pp_date_month">juni</div>
+                            <div class="pp_date_year">2018</div>
+                        </div>
+                <div class="pp_bigheadlines_title">
+                    <h3 class="pp_bigheadlines_heading " title="BLOG: de SVB op de Supportbeurs: denken in mogelijkheden">
+                        <a href="https://pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/">BLOG: de SVB op de Supportbeurs: denken in mogelijkheden</a>
+                    </h3>
+
+
+
+                </div>
+
+
+
+                <div class="pp_bigheadlines_text">Door Asha Eijkelhof,
+relatiebeheerder PGB
+
+Onbeperkte mogelijkheden voor mensen met een bewegingsperking. Dit was
+het centrale thema van de Supportbeurs die werd georganiseerd in
+Utrecht. De Sociale Verzekeringsbank was ook aanwezig om<span class="substring_dots"> …</span></div>
+                    <a class="pp_bigheadlines_more" title="BLOG: de SVB op de Supportbeurs: denken in mogelijkheden" href="https://pers.svb.nl/blog-de-svb-op-de-supportbeurs-denken-in-mogelijkheden/" aria-hidden="true" role="presentation" tabindex="-1">Lees meer over dit bericht
+                </a>
+
+
+
+
+                </div>
+                </div><div class="mm_listitem">
+                    <div class="pp_unit pp_one-of-four pp_bigheadlines_id-2684949">
+                        <div class="pp_bigheadlines_image" onclick="window.location='//pers.svb.nl/garage-de-bedoeling-wet-en-werkelijkheid-weer-in-lijn/'" style="background-image:url(//content.presspage.com/uploads/1484/500_xdsc-9740x.jpg?10000);" aria-hidden="true" role="presentation" tabindex="-1"></div>
+                    </div>
+                    <div class="pp_unit pp_three-of-four pp_bigheadlines_data">
+                        <div class="pp_bigheadlines_date">
+                            <div class="pp_date_day">08</div>
+                            <div class="pp_date_month">mei</div>
+                            <div class="pp_date_year">2018</div>
+                        </div>
+                <div class="pp_bigheadlines_title">
+                    <h3 class="pp_bigheadlines_heading " title="Garage de Bedoeling: wet en werkelijkheid weer in lijn">
+                        <a href="https://pers.svb.nl/garage-de-bedoeling-wet-en-werkelijkheid-weer-in-lijn/">Garage de Bedoeling: wet en werkelijkheid weer in lijn</a>
+                    </h3>
+
+
+
+                </div>
+
+
+
+                <div class="pp_bigheadlines_text">Op papier zijn wetten,
+ systemen en regels vaak waterdicht. Toch komt het voor dat uitvoerende
+instanties zoals de SVB, onvoldoende uit de voeten kunnen met deze
+papieren werkelijkheid. Bij de SVB wordt daarom gewerkt met Garage de
+Bedoeling. Deze<span class="substring_dots"> …</span></div>
+                    <a class="pp_bigheadlines_more" title="Garage de Bedoeling: wet en werkelijkheid weer in lijn" href="https://pers.svb.nl/garage-de-bedoeling-wet-en-werkelijkheid-weer-in-lijn/" aria-hidden="true" role="presentation" tabindex="-1">Lees meer over dit bericht
+                </a>
+
+
+
+
+                </div>
+                </div><div class="mm_listitem">
+                    <div class="pp_unit pp_one-of-four pp_bigheadlines_id-2684949">
+                        <div class="pp_bigheadlines_image" onclick="window.location='//pers.svb.nl/blog-praktische-oplossingen-voor-problematische-schulden/'" style="background-image:url(//content.presspage.com/uploads/1484/500_svb_02_boot_hozen_aow.jpg?10000);" aria-hidden="true" role="presentation" tabindex="-1"></div>
+                    </div>
+                    <div class="pp_unit pp_three-of-four pp_bigheadlines_data">
+                        <div class="pp_bigheadlines_date">
+                            <div class="pp_date_day">14</div>
+                            <div class="pp_date_month">februari</div>
+                            <div class="pp_date_year">2018</div>
+                        </div>
+                <div class="pp_bigheadlines_title">
+                    <h3 class="pp_bigheadlines_heading " title="Blog: praktische oplossingen voor problematische schulden">
+                        <a href="https://pers.svb.nl/blog-praktische-oplossingen-voor-problematische-schulden/">Blog: praktische oplossingen voor problematische schulden</a>
+                    </h3>
+
+
+
+                </div>
+
+
+
+                <div class="pp_bigheadlines_text">Door Marcel Tielen,
+adviseur strategie en externe betrekkingen
+
+De Tweede Kamer commissie van SZW organiseerde deze week een
+rondetafelgesprek over schuldenproblematiek. Namens de SVB was ik samen
+met collega’s én met collega’s van andere<span class="substring_dots"> …</span></div>
+                    <a class="pp_bigheadlines_more" title="Blog: praktische oplossingen voor problematische schulden" href="https://pers.svb.nl/blog-praktische-oplossingen-voor-problematische-schulden/" aria-hidden="true" role="presentation" tabindex="-1">Lees meer over dit bericht
+                </a>
+
+
+
+
+                </div>
+                </div><div class="mm_listitem">
+                    <div class="pp_unit pp_one-of-four pp_bigheadlines_id-2684949">
+                        <div class="pp_bigheadlines_image" onclick="window.location='//pers.svb.nl/blog-van-jeugdwet-naar-wmo-budget-hoe-kan-het-makkelijker/'" style="background-image:url(//content.presspage.com/uploads/1484/500_svb18bijlespgb.jpg?10000);" aria-hidden="true" role="presentation" tabindex="-1"></div>
+                    </div>
+                    <div class="pp_unit pp_three-of-four pp_bigheadlines_data">
+                        <div class="pp_bigheadlines_date">
+                            <div class="pp_date_day">05</div>
+                            <div class="pp_date_month">februari</div>
+                            <div class="pp_date_year">2018</div>
+                        </div>
+                <div class="pp_bigheadlines_title">
+                    <h3 class="pp_bigheadlines_heading " title="Blog: van Jeugdwet naar WMO budget: hoe kan het makkelijker?">
+                        <a href="https://pers.svb.nl/blog-van-jeugdwet-naar-wmo-budget-hoe-kan-het-makkelijker/">Blog: van Jeugdwet naar WMO budget: hoe kan het makkelijker?</a>
+                    </h3>
+
+
+
+                </div>
+
+
+
+                <div class="pp_bigheadlines_text">Garage de Bedoeling is
+ een platform voor en door medewerkers van de SVB om
+uitvoeringsdilemma’s te bespreken. Het platform is onderdeel van een
+bredere beweging binnen de SVB, om te werken aan de Bedoeling. Deze
+beweging nodigt SVB medewerkers uit<span class="substring_dots"> …</span></div>
+                    <a class="pp_bigheadlines_more" title="Blog: van Jeugdwet naar WMO budget: hoe kan het makkelijker?" href="https://pers.svb.nl/blog-van-jeugdwet-naar-wmo-budget-hoe-kan-het-makkelijker/" aria-hidden="true" role="presentation" tabindex="-1">Lees meer over dit bericht
+                </a>
+
+
+
+
+                </div>
+                </div>
+                </div>
+            </div>
+
+        <div class="pp_bigheadlines_end">
+            <div class="pp_bigheadlines_buttons">
+                <button class="pp_button_grey_back newscount_less button_less-2684949" tabindex="-1">
+                    <span class="pp-visually-hidden">Show previous item</span>
+                </button>
+                <button onclick="morenews2684949();" class="pp_button_grey newscount_more button_more-2684949" tabindex="0">
+                    <span class="pp-visually-hidden">Show next item</span>
+                </button>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+
+        <input id="hv_headlines_lastshown-2684949" value="3" type="hidden">
+        <input id="hv_headlines_loaded-2684949" value="4" type="hidden">
+
+</div>
+
+        <script>
+
+           //hidden input values should be set with js to prevent wrong inputvalues when navigating back to this page
+            pp_jquery("#hv_headlines_lastshown-2684949").val("3");
+            pp_jquery("#hv_headlines_loaded-2684949").val("4");
+            var stopservice2684949 = 0;
+            var last_shown2684949 = 3;
+            var loaded_items2684949 = 4;
+            var totalreleases2684949 = 21;
+            var corrected_totalreleases2684949 = totalreleases2684949 - 3;
+            var pp_scrollHeight2684949 = pp_jquery(".pp_bigheadlines_height-2684949 .mm_listitem").outerHeight(true);
+            var bigheadlinescontainerHeight2684949 = pp_scrollHeight2684949 * 3 - 10;
+
+            var count = 0;
+
+            function morenews2684949() {
+                var last_shown2684949 = pp_jquery('#hv_headlines_lastshown-2684949').val();
+                var loaded_items2684949 = pp_jquery('#hv_headlines_loaded-2684949').val();
+
+                last_shown2684949 = parseInt(last_shown2684949) + 1;
+                pp_jquery('#hv_headlines_lastshown-2684949').val(last_shown2684949);
+
+                pp_jquery(".button_less-2684949").css("opacity",1);
+                pp_jquery(".button_less-2684949").attr("onclick","backnews2684949();").attr('tabindex', '0');
+                // Calculate height of scrolldiv
+                var pp_scrollHeight2684949 = pp_jquery(".pp_bigheadlines_height-2684949 .mm_listitem").outerHeight(true);
+                count++;
+
+                pp_jquery(".button_more-2684949").removeAttr("onclick").attr('tabindex', '-1');
+                pp_jquery(".pp_bigheadlines_items-2684949").animate({
+                    marginTop: "-=" + pp_scrollHeight2684949                  }, 400, function() {
+                    if (last_shown2684949 < totalreleases2684949){
+                        pp_jquery(".button_more-2684949").attr("onclick","morenews2684949();").attr('tabindex', '0');
+
+                    } else {
+                        pp_jquery(".button_less-2684949").focus();
+                    }
+
+                    // update tabindex of headline-item links so only visible items are part of the tabindex.
+                    var nonVisibleItems = pp_jquery('#pp-headline-2684949 .mm_listitem .pp_bigheadlines_heading a[tabindex="-1"]');
+                    if (nonVisibleItems.length === 0) {
+                        pp_jquery('#pp-headline-2684949 .mm_listitem:first-child a').attr('tabindex', -1);
+                    } else {
+                        var lastNonVisibleItem = nonVisibleItems[nonVisibleItems.length -1];
+                        pp_jquery(lastNonVisibleItem).closest('.mm_listitem').next('.mm_listitem').find('a').attr('tabindex', -1);
+                    }
+                  });
+
+                if (stopservice2684949 == 0) {
+
+                    show_headlines2684949(loaded_items2684949,1);
+
+                }
+
+                if (last_shown2684949 >= totalreleases2684949) {
+
+                    pp_jquery(".button_more-2684949").css("opacity",0.2);
+                    stopservice2684949 = 1;
+
+                } else {
+
+                    if(loaded_items2684949 < totalreleases2684949){
+                        limitstartnew = parseInt(loaded_items2684949) + 1;
+                        pp_jquery('#hv_headlines_loaded-2684949').val(limitstartnew);
+                    }
+                }
+
+            }
+
+            function backnews2684949(){
+                last_shown2684949 = parseInt(pp_jquery('#hv_headlines_lastshown-2684949').val()) - 1;
+                pp_jquery('#hv_headlines_lastshown-2684949').val(last_shown2684949);
+                pp_jquery(".button_more-2684949").css("opacity",1);
+                pp_jquery(".button_more-2684949").attr("onclick","morenews2684949();").attr('tabindex', '0');
+                // Calculate height of scrolldiv
+                var pp_scrollHeight2684949 = pp_jquery(".pp_bigheadlines_height-2684949 .mm_listitem").outerHeight(true);
+                count--;
+
+                pp_jquery(".button_less-2684949").removeAttr("onclick").attr('tabindex', '-1');
+                pp_jquery(".pp_bigheadlines_items-2684949").animate({
+                    marginTop: "+=" + pp_scrollHeight2684949                  }, 400, function() {
+
+                    if (last_shown2684949 > 3){
+                        pp_jquery(".button_less-2684949").attr("onclick","backnews2684949();").attr('tabindex', '0');
+                    }else {
+                        pp_jquery(".button_more-2684949").focus();
+                    }
+
+                    // update tabindex of headline titles and other links so only visible items are part of the tabindex.
+                    var nonVisibleItems = pp_jquery('#pp-headline-2684949 .mm_listitem .pp_bigheadlines_heading a[tabindex="-1"]');
+                    var lastNonVisibleItem = nonVisibleItems[nonVisibleItems.length -1];
+                    pp_jquery(lastNonVisibleItem).closest('.mm_listitem').find('a').not('.pp_bigheadlines_more').attr('tabindex', 0);
+                  });
+
+                if (last_shown2684949 == 3){
+                    pp_jquery(".button_less-2684949").css("opacity",0.2);
+
+                }
+            }
+
+            function getHeight2684949(){
+                pp_jquery('.pp_bigheadlines_height-2684949').css("height", bigheadlinescontainerHeight2684949);
+            }
+
+            pp_jquery(document).ready(function() {
+
+                getHeight2684949();
+
+
+            });
+
+
+	function show_headlines2684949(limitstart, limitend){
+
+		var tags_addon = '';
+		var multimedia_count = '';
+		var sharerelease = '';
+
+		pp_jquery.getJSON('//pers.svb.nl/services/getheadlines.php?releases=["300113","288905","269850","268536","269315","267130","260878","260313","257966","255589","245620","260883","244840","244363","242494","240286","232346","231354","227773","213350","202463"]' + tags_addon + multimedia_count + '&preview=&subtitle=&substring=&video=&limitstart=' + limitstart + '&limitend=' + limitend, function(data) {
+
+		if (!data) {
+
+			stopservice2684949 = 1;
+
+		} else {
+
+			var items = '';
+
+			pp_jquery.each(data, function(key, val) {
+
+				if (key != 'error'){
+
+						var date = val['date'];
+						var date_split = date.split(" ");
+						var date_day = date_split[0];
+						var date_month = date_split[1];
+						var date_year = date_split[2];
+						var tags_items = '';
+						var multimedia_count = '';
+						var sharerelease = '';
+
+                        var addthisDescription = val['message'].replace(/"/g, "");
+
+
+
+						if(val['subtitle']){
+							var subtitle = "<h4 class=\"pp_bigheadlines_subheading\">" + val['subtitle'] + "</h4>";
+						} else {
+							var subtitle = "";
+						}
+
+						items += "<div class=\"mm_listitem\">";
+												items += "<div class=\"pp_unit pp_one-of-four pp_bigheadlines_id-2684949\">";
+						items += "<div class=\"pp_bigheadlines_image\" onclick=\"window.location='" + val['caseurl'] + "'\" style=\"" + val['featuredimage'] + "\" aria-hidden=\"true\" role=\"presentation\" tabindex=\"-1\">" + val['videothumbnail'] + "</div>";
+						items += "</div>";
+						items += "<div class=\"pp_unit pp_three-of-four pp_bigheadlines_data\">";
+
+
+							items += "<div class=\"pp_bigheadlines_date\">";
+							items += "<div class=\"pp_date_day\">" + date_day + "</div>";
+							items += "<div class=\"pp_date_month\">" + date_month + "</div>";
+							items += "<div class=\"pp_date_year\">" + date_year + "</div>";
+							items += "</div>";
+
+
+
+						items += "<div class=\"pp_bigheadlines_title\">";
+						items += "<h3 class=\"pp_bigheadlines_heading\" title=\"" + val['title'] + "\" class=\"";
+						items += '';
+						items += "\">";
+						items += "<a href=\"" + val['caseurl'] + "\">" + val['title'] + "</a>";
+						items += "</h3>" + subtitle + "</div>";
+						items += sharerelease;
+						items += "<div class=\"pp_bigheadlines_text\">" + val['message'] + "</div>";
+						items += "<a class=\"pp_bigheadlines_more\" title=\"" + val['title'] + "\" href=\"" + val['caseurl'] + "\" aria-hidden=\"true\" role=\"presentation\" tabindex=\"-1\">Lees meer over dit bericht</a>";
+						items += tags_items;
+						items += multimedia_count;
+						items += "</div>";
+						items += "</div>";
+				}
+
+			});
+
+				//pp_jquery(".preloader").fadeOut();
+				pp_jquery(".pp_bigheadlines_items-2684949").append(items);
+
+				getHeight2684949();
+			}
+		});
+	}
+                           pp_jquery(window).resize(function() {
+
+               getHeight2684949();
+               pp_jquery(".pp_bigheadlines_items-2684949").css("marginTop", -pp_scrollHeight2684949 * count);
+
+           });
+
+</script>
+    <div class="clearboth"></div>
+    </div>
+    <div class="bottom_main_client"></div>
+        </div>
+<!--googleoff: all-->
+<aside class="pp-side-column td_extras_right" role="complementary">
+        <div class="div_main_extras_top"></div>
+        <div class="div_main_extras" id="newsroom_extras">
+
+        <div id="ppmodule_socialmedia" class="pp_moduleblock">
+	<div class="extras_header"><h2 id="title_socialmedia" class="extras_headertitle_right">Social media</h2></div>
+	<div class="div_extras floatLeft">
+	<div class="socialmedia_float">
+		 <ul class="ulSocialmedia">
+
+								<li>
+									<a href="https://twitter.com/SVBonline" target="_blank">
+										<div class="pp_socialmediaitem ulSocialmedia_twitter" title="Volg ons op Twitter">
+                                            <span class="pp-visually-hidden">Volg ons op Twitter <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+                                        </div>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://nl-nl.facebook.com/socialeverzekeringsbank" target="_blank">
+										<div class="pp_socialmediaitem ulSocialmedia_facebook" title="Bezoek onze Facebook pagina">
+                                            <span class="pp-visually-hidden">Bezoek onze Facebook pagina <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+                                        </div>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.linkedin.com/company/sociale-verzekeringsbank" target="_blank">
+										<div class="pp_socialmediaitem ulSocialmedia_linkedin" title="Bekijk onze LinkedIn pagina">
+                                            <span class="pp-visually-hidden">Bekijk onze LinkedIn pagina <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+                                        </div>
+									</a>
+								</li>
+									</ul>
+	</div>
+</div>
+<div class="extras_footer floatLeft"></div>
+<div class="centerclear"></div>
+</div>
+
+	<div style="margin:0 0 15px 15px;" class="pp_moduleblock ppcustommodule_side_stripped">
+		<div style="padding-right: 10px;">
+<p><span>Voor persvragen, interviewverzoeken en beeldmateriaal kunt u als journalist contact opnemen met de woordvoerders van de SVB. </span></p>
+</div>
+	</div>
+
+
+                <div id="ppmodule_contacts" class="pp_moduleblock">
+                    <div class="extras_header"><h2 id="title_contacts" class="extras_headertitle_right">Contactpersonen</h2></div>
+                    <div class="div_extras">
+                        <div class="extras_content_right">
+                                    <div class="pp_contacts_div">
+                                        <table class="contact_text"><tbody><tr>
+                                    <td class="alignTop contact_text_td"><div class="div_contacts_image">
+                                            <img src="files/102_12575.jpg" class="img_whiteborder" alt="photo:Fleur Bello" title="Fleur Bello">
+                                         </div>
+                                        <a href="https://www.linkedin.com/authwall?trk=gf&amp;trkInfo=AQFF_YTroN9y0AAAAV-1K3zYPZ7E9hGl09hD5rxw8-dTOV" onclick="window.open(this.href,'_blank');return false;">
+                                            <div class="social_spacer_right div_linkedinicon" title="Voeg mij toe op LinkedIn"><span class="pp-visually-hidden">Voeg mij toe op LinkedIn <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+                                            </div>
+                                        </a></td>
+                                    <td class="td_contactsinfo">
+                                    <div class="pp_contactdiv_name">Fleur Bello</div><div class="contactdiv_jobtitle">Woordvoerder</div><div class="pp_email contactdiv_email"><span class="contact_subtitle"></span> <a rel="nofollow" class="emaillink" href="mailto:pers@svb.nl">pers@svb.nl</a></div><div class="contactdiv_phone"><div class="contact_subtitle"></div><div class="pp_phonenumber"> 020 656 4925</div></div></td>
+                                                </tr></tbody></table>
+                                                </div>
+                                    <div class="pp_contacts_div">
+                                        <table class="contact_text"><tbody><tr>
+                                    <td class="alignTop contact_text_td"><div class="div_contacts_image">
+                                            <img src="files/102_11421.jpg" class="img_whiteborder" alt="photo:Nienke Sneller" title="Nienke Sneller">
+                                         </div>
+                                        <a href="https://www.linkedin.com/profile/view?id=ADEAAADu55YB1zD85XGc9m6AaRYGzYxhBy3AKac&amp;authType=NAME_" onclick="window.open(this.href,'_blank');return false;">
+                                            <div class="social_spacer_right div_linkedinicon" title="Voeg mij toe op LinkedIn"><span class="pp-visually-hidden">Voeg mij toe op LinkedIn <span class="pp-visually-hidden" lang="en">(opens in new window)</span></span>
+                                            </div>
+                                        </a></td>
+                                    <td class="td_contactsinfo">
+                                    <div class="pp_contactdiv_name">Nienke Sneller</div><div class="contactdiv_jobtitle">Woordvoerder</div><div class="pp_email contactdiv_email"><span class="contact_subtitle"></span> <a rel="nofollow" class="emaillink" href="mailto:pers@svb.nl">pers@svb.nl</a></div><div class="contactdiv_phone"><div class="contact_subtitle"></div><div class="pp_phonenumber"> 020 656 4925</div></div></td>
+                                                </tr></tbody></table>
+                                                </div>
+                    </div>
+                        </div>
+                    <div class="extras_footer"></div>
+                </div>
+
+	<div style="margin:0 0 15px 15px;" class="pp_moduleblock ppcustommodule_side_stripped">
+		<p><span>Bent u geen journalist? Dan vindt u het juiste telefoonnummer op onze <a href="http://svb.nl/int/nl/algemeen/contact/contact_algemeen/bepaal_vestiging.jsp"><span>contactpagina</span></a>.</span></p>
+	</div>
+
+<div id="ppmodule_contactgeneral" class="pp_moduleblock">
+	<div class="extras_header"><h2 id="title_contactgeneral" class="extras_headertitle_right">Contactinformatie</h2></div>	<div class="div_extras">
+	<div class="extras_content_right contactgeneraldiv">
+
+		<div class="contactgeneral_companyname"><b>Sociale Verzekeringsbank</b></div>
+
+		Van Heuven Goedhartlaan 1
+		<br>
+		1181 KJ Amstelveen
+		<br>
+		<span class="contact_subtitle contactgeneral_tel">Tеl: </span>020 656 5656<br>
+		<span class="contact_subtitle contactgeneral_email">Email: </span><a class="emaillink" href="mailto:pers@svb.nl">pers@svb.nl</a><br>
+		<br>
+	</div>
+</div>
+<div class="extras_footer"></div>
+</div>
+
+<div class="extras_newsroom_header pp_moduleblock" id="medialibrary_button">
+    <div class="extras_newsroom_headertitle_right" id="medialibrary_title">
+    <a href="https://pers.svb.nl/media-archief/">Beeldbank</a>    </div>
+</div>
+        </div>
+        <div class="div_main_extras_bottom"></div>
+</aside>
+<!--googleon: all-->
+<div class="clearboth"></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div class="layout-full-width pt-home thema-corporate ppcl-wrapper">
+    <footer class="l-footer">
+
+        <div id="canvas_footer">
+            <div id="footer_container">
+                <span id="nav_footerSkip" tabindex="-1"></span>
+                <div class="menu_top">
+                    <div class="row">
+                        <section>
+                            <h3>Blijf op de hoogte</h3>
+                            <ul class="social-list">
+                                <li class="social-fb">
+                                    <a rel="external" href="https://nl-nl.facebook.com/werkenbijdesvb/" title="U gaat naar een externe site. Deze opent in een nieuw venster.">Facebook</a>
+                                </li>
+                                <li class="social-ln">
+                                    <a rel="external" href="https://www.linkedin.com/company/sociale-verzekeringsbank" title="U gaat naar een externe site. Deze opent in een nieuw venster.">Linkedin</a>
+                                </li>
+                                <li class="social-tw">
+                                    <a rel="external" href="https://twitter.com/SVBonline" title="U gaat naar een externe site. Deze opent in een nieuw venster.">Twitter</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Over de SVB</h3>
+                            <ul>
+                                <li><a href="https://www.svb.nl/int/nl/over_de_svb/index.jsp" title="">De organisatie</a></li>
+                                <li><a href="https://www.svb.nl/int/nl/werken/index.jsp" title="">Werken bij de SVB</a></li>
+                                <li><a rel="external" href="https://www.svbkennisplatform.nl/" title="U gaat naar een externe site. Deze opent in een nieuw venster.">Kennisbank</a></li>
+                                <li><a href="https://pers.svb.nl/" title="">Pers</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Service</h3>
+                            <ul>
+                                <li><a href="https://www.svb.nl/int/nl/algemeen/contact/contact_algemeen/index.jsp" title="">Contact</a></li>
+                                <li><a href="https://www.svb.nl/int/nl/algemeen/help/index.jsp" title="">Help</a></li>
+                                <li><a href="https://www.svb.nl/int/nl/aio/toegankelijkheid.jsp" title="">Toegankelijkheid</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="menu_bottom">
+                    <div class="row">
+
+                        <ul>
+                            <li>© <abbr title="Sociale Verzekeringsbank">SVB</abbr></li>
+                            <li><a href="https://www.svb.nl/int/nl/algemeen/disclaimer.jsp" title="Proclaimer">Proclaimer</a></li>
+                            <li><a href="https://www.svb.nl/int/nl/privacy/privacy.jsp" title="Privacy">Privacy</a></li>
+                            <li><a href="https://www.svb.nl/int/nl/sitemap.jsp" title="Sitemap">Sitemap</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<!-- Begin comScore CMC v.1.0.1 -->
+<script type="text/javascript">
+    // <![CDATA[
+    function sitestat(u)
+    {var d=document,l=d.location;ns_pixelUrl=u+"&ns__t="+(new Date().getTime());u=ns_pixelUrl+"&ns_c="+((d.characterSet)?d.characterSet:d.defaultCharset)+"&ns_ti="+escape(d.title)+"&ns_jspageurl="+escape(l&&l.href?l.href:d.URL)+"&ns_referrer="+escape(d.referrer);(d.images)?new Image().src=u:d.write('<'+'p><img src="'+u+'" height="1" width="1"alt="*"><'+'/p>');}
+    ;
+    var pagina = window.location.pathname;
+    pagina = pagina.replace(/[\/]/, "");
+    pagina = pagina.replace(/[,!.?]/g, "");
+    pagina = pagina.replace(/[\/]/g, ".");
+    pagina = pagina.replace(/[\| =&]/g, "_");
+    pagina = pagina.replace(/.(?=[^.]*$)/, "");
+    sitestat("//nl.sitestat.com/svb/svb/s?pers."+ pagina + "&svb_taal=nl&svb_subsite=pers");
+    // ]]>
+</script>
+<!-- End comScore CMC -->
+<!-- FOOTER -->
+
+</div><!-- pp-bodywrapper -->
+<script>
+var showAddthis = 1;
+var cookieModuleStatus = 0;
+</script>
+<script type="text/javascript" src="files/modules_v2h.js"></script>
+<script type="text/javascript">
+    if ((cookiecontrol == 'accepted') || (cookieModuleStatus == 0)) {
+        loadScript("//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591e8b1a9c5806d1", function() {
+            function eventHandler(evt) {
+                switch (evt.type) {
+                    case "addthis.menu.close":
+                        pp_addthis_lastFocus.focus();
+                        break;
+                    default:
+                        console.log('received an unexpected event', evt);
+                }
+            }
+            addthis.addEventListener('addthis.menu.close', eventHandler);
+        });
+    }
+    </script>
+
+<span class="loadLater" id="placeholderTwitterlib"></span>
+<script>
+    ppLoadLater.placeholderTwitterlib = [
+        '<script type="text/javascript" charset="utf-8">',
+        'window.twttr = (function (d,s,id) {',
+        'var t, js, fjs = d.getElementsByTagName(s)[0];',
+        'if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;',
+        'js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);',
+        'return window.twttr || (t = { _e: [], ready: function(f) { t._e.push(f) } });',
+        '}(document, "script", "twitter-wjs"));'
+    ];
+        ppLoadLater.placeholderTwitterlib.push('<\/script>');
+    ppLoadLater.placeholderTwitterlib = ppLoadLater.placeholderTwitterlib.join("\n");
+</script>
+
+<script type="text/javascript">
+
+    var jQueryCall = (typeof pp_jquery !== 'undefined') ? pp_jquery : $;
+
+
+    function isEmptyObj(obj) {
+
+       if (jQueryCall.isEmptyObject(obj) && jQueryCall.browser.msie && jQueryCall.browser.version < 9) {
+
+            return JSON.stringify(obj) === JSON.stringify({});
+       }
+
+       return jQueryCall.isEmptyObject(obj);
+    }
+
+    var addCSRFtoken = function (data, url)
+    {
+        if (isEmptyObj(data) || isExternalDomain(url)) {
+
+            return data;
+        }
+
+        if (typeof data === 'string') {
+            data = data.indexOf(window.CSRFformString) == -1 ? window.CSRFformString + '&' + data : data;
+        }
+
+        if (typeof data === 'object') {
+            data.append(window.CSRFtokenName, window.CSRFtoken);
+        }
+
+        return data;
+    }
+
+    //Returns true if the request url domain is NOT the current domain or presspage
+    var isExternalDomain = function(url)
+    {
+
+        var urlHost = getUrlHostName(url);
+        var currentHost = getCurrentDomain();
+
+        //the default behaviour is to add the token
+        if (urlHost === null || currentHost === null ) {
+            return false;
+        }
+
+        if (urlHost === currentHost || urlHost.indexOf("presspage") > 0) {
+            return false;
+        }
+
+        return true;
+    }
+
+    //Returns the hostname of an url in lowercase
+    var getUrlHostName = function(url)
+    {
+        var anchor = jQueryCall('<a>', { href:url } )[0];
+        var hostname = anchor.hostname;
+        if (hostname) {
+            return hostname.toLowerCase();
+        }
+
+        return null;
+    }
+
+    //Returns the hostname of current url in lowercase
+    var getCurrentDomain = function()
+    {
+        if(window && window.location && window.location.hostname){
+            return window.location.hostname.toLowerCase();
+        }
+
+        return null;
+    }
+
+
+    window.CSRFtoken = '2d7f9c8dc17abcf7ca36';
+    window.CSRFtokenName = '_csrf_token';
+    window.CSRFformString = CSRFtokenName + '=' + CSRFtoken;
+
+    //Add CSRF token to async call data
+    jQueryCall.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+        options.data = addCSRFtoken(options.data, options.url);
+    });
+
+    //Add CSRF token to forms
+    jQueryCall('form[method="post"]').each(function (n) {
+        var inputHtml = '<input type="hidden"\
+                         name="' + window.CSRFtokenName+'"\
+                         value="' + window.CSRFtoken + '" >';
+        jQueryCall(this).prepend(inputHtml);
+    });
+
+    //Handle the FineUploader call
+    if (!jQueryCall.isEmptyObject(XMLHttpRequest)) {
+        (function(open) {
+            XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+                this.addEventListener("readystatechange", function() {
+                    if (method.toLowerCase() == 'post') {
+                        this.isPost = true;
+                        this.url = url;
+                    }
+                }, false);
+                open.call(this, method, url, async, user, pass);
+            };
+        })(XMLHttpRequest.prototype.open);
+
+        (function(send) {
+
+            XMLHttpRequest.prototype.send = function(data) {
+                if (!!this.isPost === true) {
+                    data = addCSRFtoken(data, this.url);
+                }
+                send.call(this, data);
+            };
+
+        })(XMLHttpRequest.prototype.send);
+    }
+
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75ecccde34","applicationID":"14886446","transactionName":"bwYBZkFUCEBWUExeDFZMIEdAQQleGFBZVAtdB05RXFsSVllH","queueTime":0,"applicationTime":12,"atts":"Q0ECEAlOG04=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="pp_cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="pp_cboxWrapper"><div><div id="pp_cboxTopLeft" style="float: left;"></div><div id="pp_cboxTopCenter" style="float: left;"></div><div id="pp_cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="pp_cboxMiddleLeft" style="float: left;"></div><div id="pp_cboxContent" style="float: left;"><div id="pp_cboxTitle" style="float: left;"></div><div id="pp_cboxCurrent" style="float: left;"></div><button type="button" id="pp_cboxPrevious" aria-hidden="true"><span class="pp-visually-hidden">Previous</span></button><button type="button" id="pp_cboxNext" aria-hidden="true"><span class="pp-visually-hidden">Next</span></button><div id="pp_cboxLoadingOverlay" style="float: left;"></div><div id="pp_cboxLoadingGraphic" style="float: left;"></div></div><div id="pp_cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="pp_cboxBottomLeft" style="float: left;"></div><div id="pp_cboxBottomCenter" style="float: left;"></div><div id="pp_cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

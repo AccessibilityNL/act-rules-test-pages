@@ -1,0 +1,262 @@
+#legenda
+{
+    width:250px;
+    height:200px;
+    /*top:340px;*/
+    left:0px;
+    position: absolute;
+}
+
+.checkbox
+{
+    width: 19px;
+    height: 19px;
+    background: url(../img/checkbox.gif) no-repeat;
+    display: block;
+    clear: left;
+    float: left;
+}
+
+#header
+{
+    width:100%;
+    height:45px;
+    position: relative;
+    background-color: #333333;
+}
+
+#panel
+{
+    position: relative;
+    width:100%;
+    height: 100%;
+    /*height:155px;*/
+}
+
+#panel-fg
+{
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    position: absolute;
+}
+
+#panel-bg
+{
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    background-color: #333333;
+    filter:alpha(opacity=80);
+    -moz-opacity: 0.80;
+    opacity: 0.80;
+    position: absolute;
+}
+
+#header h3
+{
+    color: #ffffff;
+    padding: 13px 20px 17px 20px;
+    width: 130px;
+    font-size:14px;
+    line-height:13px;
+    font-weight:normal;
+    margin: 0px;
+    float: left;
+}
+#btn-close
+{
+    width:17px;
+    height:12px;
+    float: right;
+    text-indent:-9999px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.expanded {background:url(../img/pijl-inklap.gif) no-repeat;}
+.collapsed {background:url(../img/pijl-uitklap.gif) no-repeat;}
+
+#btn-reset
+{
+    width:20px;
+    height:19px;
+    float: left;
+    text-indent:-9999px;
+    background:url(../img/pijl-reset.gif) no-repeat;
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
+#content
+{
+    float:left;
+    margin-top: 10px;
+}
+
+#spacer
+{
+    height: 15px;
+    width:190px;
+    margin-left: 21px;
+    border-bottom: 1px solid #acacac;
+}
+
+/*items*/
+
+ul
+{
+    margin:0 0 -2px;
+    padding:15px 0 0 21px;
+    list-style:none;
+}
+ul li
+{
+    padding:0 0 4px;
+    border:none;
+    height: auto;
+    width: 100%;
+
+}
+
+.label
+{
+    width: 190px;
+    vertical-align: middle;
+    font:100% Verdana, Geneva, sans-serif;
+    color:#ffffff;
+    margin-left: 6px;
+    /*line-height: 26px;*/
+}
+.sectionlabel-small
+{
+    color:#ffffff;
+    padding-bottom: 5px;
+    width: 95px;
+    font-size: 10px;
+}
+.sectionlabel
+{
+    color:#ffffff;
+    width: 200px;
+    font-size: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.box
+{
+    float: left;
+}
+
+.checklabel
+{
+    line-height: 20px;
+    vertical-align: middle;
+    padding-left: 6px;
+}
+.headlabel
+{
+    float: left;
+    color:#ffffff;
+    padding-bottom: 5px;
+
+}
+
+.checklabel-large
+{
+    vertical-align: middle;
+}
+
+.holder-inner
+{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.holder-inner-title
+{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding: 10px 0 0 0;
+}
+
+/* search */
+
+#searchContainer
+{
+
+}
+
+#fld-search
+{
+    float:left;
+    width:170px;
+    height:21px;
+    text-indent:10px;
+    font-size: 11px;
+    color:#ffffff;
+    background: #acacac;
+    border: none;
+    padding: 0;
+    margin: 10px 0 10px 20px;
+}
+
+#btn-search {
+    float:left;
+    width:23px;
+    height:23px;
+    border:none;
+    background: url(../img/zoek.gif) no-repeat;
+    cursor: pointer;
+    padding: 0;
+    margin: 10px 0 10px 0;
+
+}
+
+/* checkboxes */
+.ez-hide { opacity: 0; filter:alpha(opacity=0); height:20px; width:20px;}
+
+.ez-checkbox
+{
+    background: transparent url('../img/checkboxen-laden.gif') 0 1px no-repeat;
+    display:inline-block;
+    width: 46px;
+    height: 23px;
+}
+
+.ez-checked
+{
+    background-position: 0 -23px;
+}
+.ez-selected
+{
+    background-position: 0 -24px;
+}
+.ez-checkbox
+{
+    zoom: 1; *display:inline; _height:40px;
+    vertical-align: middle;
+}
+/* BVB 26082017 added focus class, to give control */
+/* a border when gaining TAB focus (accessibility) */
+.ez-focus {
+  outline: rgb(59, 153, 252) auto 5px;
+  width: 97%;
+}
+
+/* traffic checkbox */
+
+.ez-checkbox-traffic
+{
+    background: transparent url('../img/checkbox-traffic.gif') -96px 1px no-repeat;
+    display:inline-block;
+    width: 46px;
+    height: 23px;
+}
+.ez-checked-traffic
+{
+    background-position: -96px -23px;
+}

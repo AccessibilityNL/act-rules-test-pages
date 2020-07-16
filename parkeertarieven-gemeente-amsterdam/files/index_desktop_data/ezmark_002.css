@@ -1,0 +1,76 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+
+.ez-checkbox-taxistandplaats
+{
+	background: transparent url('../img/checkboxen.gif') 0px 1px no-repeat;
+	display:inline-block;
+	width: 46px;
+	height: 23px;
+}
+.ez-checked-taxistandplaats
+{
+	background-position: 0px -23px;
+}
+
+.ez-checkbox-fietsenstalling
+{
+	background: transparent url('../img/checkboxen.gif') -48px 1px no-repeat;
+	display:inline-block;
+	width: 46px;
+	height: 23px;
+}
+.ez-checked-fietsenstalling
+{
+	background-position: -48px -23px;
+}
+
+.ez-checkbox-parkeergarage
+{
+	background: transparent url('../img/checkboxen.gif') -94px 1px no-repeat;
+	display:inline-block;
+	width: 46px;
+	height: 23px;
+}
+.ez-checked-parkeergarage
+{
+	background-position: -94px -23px;
+}
+
+.ez-checkbox-gem-parkeergarage
+{
+    background: transparent url('../img/checkboxen.gif') -235px 1px no-repeat;
+    display:inline-block;
+    width: 46px;
+    height: 23px;
+}
+.ez-checked-gem-parkeergarage
+{
+    background-position: -235px -23px;
+}
+
+.ez-checkbox-penr
+{
+	background: transparent url('../img/checkboxen.gif') -141px 1px no-repeat;
+	display:inline-block;
+	width: 46px;
+	height: 23px;
+}
+.ez-checked-penr
+{
+	background-position: -141px -23px;
+}
+
+.ez-checkbox-betaalautomaat
+{
+    background: transparent url('../img/checkboxen.gif') -188px 1px no-repeat;
+    display:inline-block;
+    width: 46px;
+    height: 24px;
+}
+.ez-checked-betaalautomaat
+{
+    background-position: -188px -23px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="550px" height="550px" viewBox="0 0 550 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-profile">
+            <rect id="Rectangle" fill="#D0D0D0" x="0" y="0" width="550" height="550"></rect>
+            <g transform="translate(141.000000, 100.000000)" id="Shape" fill-rule="nonzero" fill="#4B4B4B">
+                <path d="M134,171.173 C172.914,171.173 204.463,132.855 204.463,85.587 C204.463,38.317 194.105,0 134,0 C73.895,0 63.535,38.318 63.535,85.587 C63.535,132.855 95.085,171.173 134,171.173 Z"></path>
+                <path d="M266.935,298.397 C265.63,216.055 254.875,192.592 172.583,177.74 C172.583,177.74 160.999,192.5 133.999,192.5 C106.999,192.5 95.412,177.74 95.412,177.74 C14.018,192.43 2.61,215.545 1.11,295.722 C0.987,302.269 0.93,302.612 0.908,301.852 C0.913,303.277 0.918,305.912 0.918,310.504 C0.918,310.504 20.511,350 133.998,350 C247.485,350 267.078,310.504 267.078,310.504 C267.078,307.554 267.081,305.501 267.084,304.104 C267.062,304.574 267.018,303.664 266.934,298.397 L266.935,298.397 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,189 @@
+* { padding: 0; margin: 0; border: none; text-decoration: none; list-style-type: none; }
+
+a:link{
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+a:visited{
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+a:hover{
+color: #ffea96;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+a:active{
+color: #ffea96;
+text-decoration: underline;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+} 
+.title {
+ float: left;
+ display: block; 
+ margin: 0px 0px 5px 0px;	
+}
+.tekst_home {
+ margin: 20px 0px 33px 0px;	
+ color: #FFFFFF;
+}
+.tekst_content {
+ margin: 15px 0px 2px 0px;	
+}
+.social {
+ float: right;
+ display: block; 
+ margin: 0px 9px 0px 0px;	
+}
+h4 {
+ font-size: 16px;
+ margin: 0 0 20px 0;	
+}
+.leesmeer {
+ position: absolute;
+ bottom: 8px;
+}
+ul.nieuws {
+ padding: 0 0 0 15px;	
+}
+ul.nieuws li { 
+ padding: 0 0 5px 0;
+ list-style: url(../images/rmc_pijltje.png);
+}
+ul.faq {
+ padding: 0 0 0 15px;	
+}
+ul.faq li { 
+ padding: 0 0 5px 0;
+ list-style: square;
+}
+
+.tekstwie {
+	 font-family: Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ color: #ffffff;}
+ 
+ 
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ color: #ffffff;
+ text-align: center;
+ background: #e3e3e3;
+}
+#wrapper { 
+ width: 900px;
+ margin: 0 auto;
+ padding: 0 5px 0 5px;
+ text-align: left;
+}
+#header {
+ width: 900px;
+ height: 263px;
+ float: left;
+}
+#content_nieuws {
+ width: 874px;
+ float: left;
+ background: #691f5e;
+ padding: 0 13px 20px 13px;
+ margin: 15px 0px 5px 0px;	
+}
+#content_contact {
+ width: 874px;
+ float: left;
+ background: #691f5e;
+ padding: 0 13px 20px 13px;
+ margin: 15px 0px 5px 0px;	
+}
+#leftcolumn { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 3px 0px;
+ height: 270px; 
+ width: 143px;
+ max-height: 280px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+#leftmiddle { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 3px 0px;
+ height: 270px; 
+ width: 143px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+#middle { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 3px 0px;
+ height: 270px; 
+ width: 143px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+#rightmiddle { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 3px 0px;
+ height: 270px; 
+ width: 143px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+#rightcolumn { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 5px 0px;
+ height: 270px; 
+ width: 143px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+
+#knopvsv { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 5px 0px;
+ height: 43px; 
+ width: 412px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+
+#knopkwetsbare { 
+ color: #ffffff;
+ background: #691f5e;
+ margin: 15px 7px 5px 0px;
+ height: 43px; 
+ width: 412px;
+ float: left;
+ padding: 15px;
+ position: relative;
+}
+
+
+#footer { 
+ width: 900px;
+ height: 25px;
+ clear: both;
+ color: #333;
+ margin: 2px 0px 5px 0px;
+ padding: 2px 0 0 10px;
+}
+#footer_tekst { 
+ float: right;
+ color: #ffffff;
+}
+.clear { float: left; width: 1px; /* https://www.positioniseverything.net/explorer/peekaboo.html */ }

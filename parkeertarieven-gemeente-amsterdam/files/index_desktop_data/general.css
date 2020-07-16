@@ -1,0 +1,23 @@
+html { height: 100% }
+body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0 ;
+    color:#000;
+    font:11px Verdana, Geneva, sans-serif;
+    background:#dddddd ;
+    overflow:hidden;
+}
+
+#map_canvas
+{
+    width:1000px;
+    height:540px;
+    background-color: #ffffff;
+}
+
+#wrapper{
+    width:1000px;
+    height:540px;
+}

@@ -1,0 +1,237 @@
+#pkt-app {
+  margin: 0 10px 0 10px;
+}
+#pkt-app #address-form fieldset {
+  font-size: 1.3em;
+}
+#pkt-app #address-form label,
+#pkt-app #address-form input,
+#pkt-app #address-form button {
+  font-size: inherit;
+  padding: 10px 15px 10px 15px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  outline: none;
+  border: none;
+}
+#pkt-app #address-form label {
+  font-family: "Avenir LT W01 85 Heavy";
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+#pkt-app #address-form input {
+  font-family: "Avenir LT W01 65 Medium";
+  color: #000000;
+  border: 1px solid #787878;
+  width: 40%;
+  vertical-align: bottom;
+  margin: 6px 0 0 0;
+}
+#pkt-app #address-form input::placeholder {
+  font-family: "AvenirNextLTW01-Regular";
+  color: #bebebe;
+}
+#pkt-app #address-form input:focus {
+  border: 1px solid #000;
+}
+#pkt-app #address-form button {
+  background-color: #fe0000;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Avenir Next LT W01 Demi", arial, sans-serif;
+  font-size: 1em;
+  margin: 6px 0 0 10px;
+  padding: 11px 15px;
+}
+#pkt-app #address-form .error {
+  border: 1px solid red;
+}
+#pkt-app #address-form .errormsg {
+  color: red;
+  font-size: .8em;
+}
+#pkt-app p {
+  margin-bottom: 10px;
+}
+#pkt-app ul {
+  list-style-type: none;
+}
+#pkt-app li {
+  clear: both;
+  margin-bottom: 8px;
+}
+#pkt-app li a {
+  display: inline-block;
+  padding-left: 15px;
+  hyphens: auto;
+}
+#pkt-app a {
+  text-decoration: underline;
+}
+#pkt-app .map {
+  width: 100%;
+  height: 400px;
+}
+#pkt-app table {
+  border: 1px solid #787878;
+  margin: 0 30px 10px 0;
+}
+#pkt-app td {
+  padding: 10px;
+}
+#pkt-app td:first-child {
+  padding-right: 0;
+}
+#pkt-app td:nth-child(2) {
+  padding-left: 0;
+}
+#pkt-app .titlecell {
+  padding-right: 0;
+}
+#pkt-app .slots {
+  border: 0;
+}
+#pkt-app .slots span:first-child {
+  display: inline-block;
+  width: 70px;
+}
+#pkt-app .slots span {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  margin: 0;
+  text-align: right;
+  width: 80px;
+}
+#pkt-app .slots div {
+  padding: 0;
+  margin: 0;
+}
+#pkt-app .tarieven > div {
+  padding-left: 0px;
+  padding-bottom: 4px;
+  font: 10px Verdana;
+  /* border:1px solid blue; */
+  box-sizing: border-box;
+}
+#pkt-app .tarieven > div > span {
+  display: inline-block;
+  font: 10px Verdana;
+  width: 63px;
+  /* border:1px solid red; */
+  box-sizing: border-box;
+  text-align: right;
+}
+#pkt-app .tarieven > div > span:first-child {
+  width: 43px;
+}
+#pkt-app .tarieven table {
+  border-color: #eee;
+}
+#pkt-app .tarieven td {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  padding: 0;
+  background-color: #fff;
+}
+#pkt-app .tarieven td .noborder {
+  border: none;
+}
+#pkt-app .tarieven td:first-child {
+  border: none;
+}
+#pkt-app .tarieven .tarievencell {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+#pkt-app .tarieven .daycell {
+  font: 10px Verdana;
+  font-weight: bold;
+  border: none;
+  text-align: right;
+  padding-right: 5px;
+  width: 30px;
+  line-height: 20px;
+}
+#pkt-app .tarieven .tarief-shade {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #333333 transparent transparent;
+  float: right;
+  margin-right: 1px;
+}
+@media screen and (min-width: 1024px) {
+  /* large */
+  #pkt-app #map {
+    display: none;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  /* medium */
+  #PagCls_13995218 {
+    display: none;
+  }
+  #pkt-app #address-form label {
+    display: block;
+  }
+  #pkt-app #address-form input {
+    margin: 0;
+    width: 70%;
+  }
+  #pkt-app .tarieven > div {
+    width: 460px;
+  }
+  #pkt-app .tarieven > div > span {
+    width: 48px;
+  }
+  #pkt-app .tarieven .tarievencell {
+    width: 15px;
+    height: 15px;
+  }
+  #pkt-app .tarieven .daycell {
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 539px) {
+  /* small */
+  #PagCls_13995218 {
+    display: none;
+  }
+  #pkt-app #address-form label {
+    display: block;
+  }
+  #pkt-app #address-form input {
+    margin: 0;
+    width: 70%;
+  }
+  #pkt-app .slots {
+    border: 0;
+  }
+  #pkt-app .slots span:first-child {
+    display: block;
+    width: 70px;
+    text-align: left;
+  }
+  #pkt-app .slots span {
+    padding: 0 30px 0 0;
+  }
+  #pkt-app .tarieven {
+    display: none;
+  }
+  #pkt-app .tarieven > div {
+    width: 460px;
+  }
+  #pkt-app .tarieven > div > span {
+    width: 48px;
+  }
+  #pkt-app .tarieven .tarievencell {
+    width: 15px;
+    height: 15px;
+  }
+  #pkt-app .tarieven .daycell {
+    line-height: 15px;
+  }
+}

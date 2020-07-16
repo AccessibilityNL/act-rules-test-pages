@@ -1,0 +1,129 @@
+/* 
+ZonnaCare.nl 2014 - Main stylesheet 
+*/
+
+/* Generic styles */
+body{background: #333; }
+h1, h2, h3, h4, h5, h6, h7, ul.nav > li a{font-family: 'Open Sans', sans-serif;}
+h1{font-size: 1.8em; margin: 0 0 1em 0; color: #97BF0D; font-weight: normal;}
+h2{font-size: 1.3em; margin: 0 0 0.5em 0; color: #97BF0D; font-weight: normal;}
+h3{font-size: 1.2em; margin: 0 0 0.5em 0; color: #97BF0D; font-weight: normal;}
+ul li{color: #444;}
+p, #content > li, li, #content > ul li, blockquote{font-size: 15px !important; font-weight: 300; color: #444 !important;}
+a{color: #444;}
+a:hover{color: #444;}
+p+h1, p+h2, p+h3{margin-top: 20px;}
+.white{background: #FFF;}
+
+/* Landing page */
+img.noborder{border: 0;}
+
+/* Headers */
+div#header img{margin: 20px 0 20px 0;}
+
+/* Header image */
+div.jumbotron{margin: 0 auto 0 auto; height: 250px; background-position: center center; background-size: cover; -moz-background-size: cover;}
+div.jumbotron.small{height: 140px !important;}
+
+div.jumbotron h1{color: #FFF;}
+@media (min-width: 768px) 
+{ 
+div.jumbotron h1{font-size: 3em;}
+}
+
+/* Navigation */
+.navbar-default{border-radius: 0; background: #97BF0D; border: 0; margin: 0;}
+.navbar-header button{border: 0;}
+.navbar-nav{position: relative;}
+ul.nav > li a{color: rgba(80,0,1,1) !important; font-size: 15px; font-weight: 500;}
+ul.nav > li a:hover, ul.nav > li.current_page_item a{color: #FFF !important;}
+ul.navbar-right{margin: 0 0 0 0;}
+div.collapse.in > ul, div.collapsing > ul{margin: 0 !important; background: #97BF0D;}
+a.navbar-brand{padding-top: 10px; padding-bottom: 10px;}
+a.navbar-brand:hover{opacity: 0.8;}
+.navbar-default .navbar-toggle span.icon-bar{background: #FFF !important;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background: #FFF;}
+.navbar-default .navbar-toggle:hover span.icon-bar{background: #97BF0D !important;}
+.navbar-collapse{border-top-color: #97BF0D !important;}
+button.navbar-toggle{border: none !important;}
+button.navbar-toggle:hover span.menu{color: #97BF0D !important;}
+.navbar-default li.current-menu-ancestor > a:first-child{color: #FFF !important;}
+
+	/* Pulldown */
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{background: #97BF0D; color: #FFF !important; margin: 0 !important;}
+
+	/* Active */
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{background: #FFF; color: #97BF0D !important;}	
+
+
+/* Homepage quicklinks */
+div#quicklinks ul li a{border-radius: 5px; border: 0; margin: 0 0 15px 0; font-size: 1.1em; color: #FFF !important; background: #97BF0D; padding: 5px 15px; display: block; text-decoration: none; text-align: left;}
+div#quicklinks ul li a:hover{opacity: 0.8;}
+div#quicklinks ul{margin: 15px 0 0 0; padding: 0;}
+div#quicklinks ul li{list-style: none;}
+
+/* Button styling (links) and form elements */
+.button, a.add_file{border-radius: 5px; border: 0; margin: 0 0 25px 0; font-size: 1.1em; color: #FFF !important; background: #97BF0D; padding: 5px 15px; display: inline-block; text-decoration: none; text-align: center;}
+.button:hover{text-decoration: none; color: #FFF; opacity: 0.8;}
+.button.full{width: 100%; display: block !important; text-align: center;}
+.form-control:focus{border-color: #BBB; box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(151,191,13,.3);}
+.screen-reader-response{display: none;}
+
+	/* Alerts */
+	.wpcf7-mail-sent-ok{border: 1px solid; border-radius: 3px; padding: 10px; background: #dff0d8; color: #3c763d; font-size: 14px; text-align: center; display: block;}
+	.wpcf7-validation-errors{padding: 10px; background: #f2dede; color: #a94442; font-size: 14px; text-align: center; display: block;}
+	.wpcf7-not-valid-tip{color: #a94442; font-size: 14px;}
+	.wpcf7-not-valid{background: #f6ecec;}
+
+/* Content */
+div#content{margin: 20px auto 20px auto;}
+div#content img.noborder{border: 0 !important;}
+div#content img{border: 1px solid #97BF0D; padding: 1px; border-radius: 2px; max-width: 100%; height: auto;}
+div#content a{color: #97BF0D;}
+img.alignleft{float: left;}
+img.alignright{float: right; margin: 0 0 15px 15px;}
+div#content iframe{width: 100%;}
+
+/* Footer */
+div#footer{background: #333; padding: 10px 0 5px 0; min-height: 150px;}
+div#footer a{font-size: 0.9em; margin: 0 15px 0 0; color: #CCC;}
+div#footer a:hover{color: #FFF; text-decoration: none;}
+div#footer p{color: #999 !important; font-size: 0.9em;}
+
+/* Change Navbar breakpoint */
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}

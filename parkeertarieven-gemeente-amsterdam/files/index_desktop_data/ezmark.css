@@ -1,0 +1,125 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+
+
+.ez-checkbox-yellow
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -0px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-yellow
+{
+	background-position: -0px -23px;
+}
+
+.ez-checkbox-light-orange
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -24px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-light-orange
+{
+	background-position: -24px -23px;
+}
+
+.ez-checkbox-dark-orange
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -48px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-dark-orange
+{
+	background-position: -48px -23px;
+}
+
+.ez-checkbox-red
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -72px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-red
+{
+	background-position: -72px -23px;
+}
+
+.ez-checkbox-pink
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -96px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-pink
+{
+	background-position: -96px -23px;
+}
+
+.ez-checkbox-blue
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -120px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-blue
+{
+	background-position: -120px -23px;
+}
+
+.ez-checkbox-purple
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -144px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-purple
+{
+	background-position: -144px -23px;
+}
+
+.ez-checkbox-aubergine
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -168px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-aubergine
+{
+	background-position: -168px -23px;
+}
+
+.ez-radio-light-gray
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -192px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-radio-light-gray
+{
+	background-position: -192px -23px;
+}
+
+.ez-radio-dark-gray
+{
+	background: transparent url('../img/checkboxen-tarieven.gif') -216px 1px no-repeat;
+	display:inline-block;
+	width: 23px;
+	height: 24px;
+}
+.ez-checked-radio-dark-gray
+{
+	background-position: -216px -23px;
+}

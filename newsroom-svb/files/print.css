@@ -1,0 +1,456 @@
+@charset "UTF-8";
+body{
+    font-size: 62.5%;
+}
+
+div, span, h1, h2, h3, a, p, form, input, textarea, select, table,  th, td, caption, blockquote{
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    background-image: none !important;
+}
+th{
+    text-align: left;
+}
+p{
+    margin: 0 0 1.2em 0;
+}
+img{
+    border: 0px;
+}
+a{
+    text-decoration: underline;
+}
+.cleardiv{
+    clear: both;
+    line-height: 1px;
+}
+h1{
+    font-size: 2.8em;
+    font-weight: normal;
+    margin: 30px 9px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+h2{
+    font-size: 1.58em;
+    font-weight: bold;
+    margin: 20px 0px 6px 0px;
+    padding: 0px 0px 0px 0px;
+}
+h3{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+h4{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+q{
+    quotes: '\201C' '\201D' '\2018' '\2019';
+}
+#skiplinks a{
+    display: none;
+}
+#maincontent #media {
+    display: none;
+}
+#video_container {
+    display: none;
+}
+#top_container, #nav_container, #footer_container, #subcontent{
+    display: none;
+}
+#svblogo_screen{
+    display: none;
+}
+#svblogo_print{
+    width: 10cm;
+}
+#maincontent{
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+}
+#maincontent div .indent{
+    margin-left: 16px;
+}
+#maincontent div img.left, #maincontent div img.right, #maincontent .img_left, #maincontent .img_right{
+    border: solid #ffffff;
+    border-width: 3px 0px 8px 0px;
+}
+#maincontent div img.left, #maincontent .img_left{
+    border-right-width: 16px;
+    float: left;
+}
+#maincontent div img.right, #maincontent .img_right{
+    border-left-width: 16px;
+    float: right;
+}
+#maincontent .img_left, #maincontent .img_right{
+    font-style: italic;
+}
+#maincontent ul {
+    list-style: square;
+    margin: 0px 0px 15px 26px;
+}
+#maincontent a.returnhome{
+    display: none;
+}
+#maincontent .newscollection div{
+    margin-bottom: 15px;
+}
+#maincontent .newscollection h4{
+    margin: -3px 0px 4px 0px;
+}
+#maincontent .newscollection .actueel img {
+    display: none;
+}
+#maincontent .newscollection a.follow{
+    display: block;
+    margin-bottom: 15px;
+}
+#maincontent .newscollection a.h4{
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+}
+#maincontent .newscollection .menu{
+    text-align: center;
+}
+#maincontent .newscollection .menu a{
+    margin: 0px 2px 0px 2px;
+}
+#maincontent .newscollection .menu a.curpage{
+    font-weight: bold;
+    text-decoration: none;
+}
+#maincontent .navigationblock a.h2{
+    font-size: 1.58em;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0px 6px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#maincontent .navigationblock ul ul{
+    margin: 0px 0px 0px 16px;
+}
+#maincontent .navigationblock .label{
+    display: none;
+}
+#maincontent .navigationblock .moreorless{
+    display: block !important;
+}
+#maincontent .faqresult{
+    margin-top: 20px;
+}
+#maincontent .faqresult .title{
+    padding-bottom: 5px;
+}
+#maincontent .faqresult li span{
+    display: block;
+}
+#maincontent .searchresult{
+    margin-top: 20px;
+}
+#maincontent .searchresult .list .title{
+    padding-bottom: 5px;
+}
+#maincontent .searchresult li a span.doctype{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-left: 5px;
+}
+#maincontent .searchresult .label{
+    margin-top: 15px;
+}
+#maincontent .searchresult .menu{
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+}
+#maincontent .searchresult .menu a{
+    margin: 0px 2px 0px 2px;
+}
+#maincontent .searchresult .menu a.curpage{
+    font-weight: bold;
+    text-decoration: none;
+}
+#maincontent .mainsearchform{
+    display: none;
+}
+#maincontent .formblock .field{
+    clear: both;
+    width: 100%;
+    margin-bottom: 9px;
+}
+#maincontent .formblock input.button, #maincontent .formblock a.print{
+    display: none;
+}
+#maincontent .formblock label{
+    display: block;
+    width: 168px;
+    margin-right: 18px;
+    font-weight: bold;
+}
+#maincontent .formblock .hint{
+    display: block;
+    width: 14px;
+    text-align: center;
+    font-weight: bold;
+    visibility: hidden;
+}
+#maincontent .formblock .alert{
+    margin-left: 5px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+#maincontent .formblock ul.errors{
+    margin-bottom: 10px;
+    font-weight: bold;
+    list-style: none url('');
+}
+#maincontent .formblock ul.errors li{
+    margin-bottom: 10px;
+    clear: both;
+}
+#maincontent .formblock ul.errors .alert{
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+#maincontent .formblock .field input, #maincontent .formblock .field textarea, #maincontent .formblock .field .radiogroup{
+    width: 312px;
+}
+#maincontent .formblock .field label, #maincontent .formblock .field .hint, #maincontent .formblock .field input, #maincontent .formblock .field textarea, #maincontent .formblock .field select, #maincontent .formblock .field .alert{
+    margin-bottom: 9px;
+    float: left;
+}
+#maincontent .formblock .field .radiogroup label{
+    width: auto;
+    display: inline;
+    margin-right: 19px;
+    font-weight: normal;
+}
+#maincontent .formblock .field input, #maincontent .formblock .field textarea, #maincontent .formblock .field select{
+    border: 1px solid #cccccc;
+}
+#maincontent .formblock .field .radiogroup{
+    display: inline;
+}
+#maincontent .formblock .field .radiogroup input{
+    border: none;
+    width: 20px;
+    float: left;
+}
+#maincontent .formblock .field .tooltip, #maincontent .formblock .field .hint_noscript{
+    display: none;
+}
+#maincontent #stickynote{
+    display: none;
+}
+body.stickynote_print #maincontent li{
+    margin-bottom: 5px;
+}
+body.stickynote_print #maincontent a{
+    text-decoration: none;
+}
+body.stickynote_print #maincontent a, body.stickynote_print #maincontent span{
+    display: block;
+}
+body.stickynote_print #maincontent span{
+    margin-top: 2px;
+}
+#maincontent .wizardblock a.print, #maincontent .wizardblock .button{
+    display: none;
+}
+#maincontent .wizardblock .content hr{
+    margin: 0px 0px 0px 0px;
+    background-color: #000000;
+}
+#maincontent .wizardblock .field{
+    clear: both;
+    width: 100%;
+}
+#maincontent .wizardblock label, #maincontent .wizardblock select, #maincontent .wizardblock .radiogroup{
+    margin-bottom: 1em;
+}
+#maincontent .wizardblock label{
+    font-weight: bold;
+    float: left;
+}
+#maincontent .wizardblock label span{
+    margin-right: 5px;
+}
+#maincontent .wizardblock .radiogroup label{
+    font-weight: normal;
+    display: inline;
+}
+#maincontent .wizardblock .field select, #maincontent .wizardblock .field .radiogroup{
+    float: right;
+}
+#maincontent .wizardblock .field select, #maincontent .wizardblock .field input{
+    margin-left: 10px;
+}
+#maincontent .wizardblock p{
+    margin-top: 1em;
+}
+#maincontent .kindernamen_formblock {
+    display: none;
+}
+#maincontent .kindernamen{
+    margin-top: 16px;
+    display: block;
+}
+#maincontent .kindernamen div{
+    float: left;
+    width: 50%;
+}
+#maincontent .kindernamen li a{
+    text-decoration: none;
+}
+#maincontent .kindernamen li img{
+    display: inline;
+    margin: 0px 0px 2px 2px;
+}
+#kindernaam_popup{
+    display: block;
+    font-size: 1.2em;
+    float: left;
+    left: 0px !important;
+    top: 0px !important;
+    position: relative !important;
+}
+#kindernaam_popup .close, #kindernaam_popup_background{
+    display: none;
+}
+#maincontent .vestigingenkaart{
+    height: 316px;
+    width: 268px;
+}
+#maincontent .vestigingenkaart img, #maincontent .vestigingenkaart div{
+    position: absolute;
+}
+#maincontent .vestigingenkaart a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    position: absolute;
+    white-space: nowrap;
+}
+#maincontent .vestigingenkaart_met_adressen .kaart{
+    width: 50%;
+    float: left;
+}
+#maincontent .vestigingenkaart_met_adressen .kaart img, #maincontent .vestigingenkaart_met_adressen .kaart div{
+    position: absolute;
+}
+#maincontent .vestigingenkaart_met_adressen .kaart img.hide{
+    display: none;
+}
+#maincontent .vestigingenkaart_met_adressen .kaart a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    position: absolute;
+    white-space: nowrap;
+}
+#maincontent .vestigingenkaart_met_adressen .linkmodule{
+    width: 50%;
+    float: right;
+}
+#maincontent .vestigingenkaart_met_adressen .linkmodule li{
+    margin-bottom: 2px;
+}
+#maincontent .vestigingenkaart_met_adressen .linkmodule li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#maincontent .vestigingenkaart_met_adressen .linkmodule li a span{
+    font-weight: normal;
+}
+
+
+.l-header .svb-logo img {
+    position: relative;
+    top:0;
+}
+
+.language-select, .digid-login, .questionform, .attention-banner, .login {
+    display: none !important;
+}
+
+.l-header, .field-textarea textarea, .field-date input {
+    box-shadow: none;
+}
+
+.hero {
+    padding-bottom: 0;
+}
+
+@media (max-width: 720px) {
+    .regulation-highlight, .show-all-regulations, .all-regulations>a, .what-to-do li, .news-teaser, .campaign-teaser {
+        margin-bottom: 0 !important;
+    }
+
+    .regulation-highlight {
+        padding-top: 0;
+    }
+
+    .show-all-regulations, .regulation-highlight li {
+        margin-top: 0 !important;
+    }
+
+    .regulation-highlight, .all-regulations>a, .current .section-title {
+        margin-left: 0 !important;
+        padding-left:0 !important;
+    }
+
+    .all-regulations>a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        min-height: 16px !important;
+    }
+
+    .what-to-do .section-title {
+        margin-bottom: 15px !important;
+    }
+
+    .current .section-title {
+        margin-bottom: 0 !important;
+    }
+
+    .current {
+        padding-top: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    .news-teaser
+    {
+        padding-top: 50px;
+        margin-top: 0 !important;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .regulation-highlight, .news-teaser, .campaign-teaser {
+        height: 100% !important;
+    }
+
+    .campaign-teaser  {
+        page-break-before: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+        page-break-after: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+        page-break-inside: avoid !important; /* or 'auto' */
+    }
+}

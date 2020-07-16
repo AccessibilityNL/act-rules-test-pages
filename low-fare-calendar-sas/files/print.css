@@ -1,0 +1,45 @@
+/* Default left, right, top, bottom margin is 2cm */
+@page { margin: 1cm } 
+
+/* First page, 10 cm margin on top */
+@page :first {
+  margin-top: 2 cm;
+}
+
+/* Left pages, a wider margin on the left */
+@page :left {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+@page :right {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+/*
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-before: always;
+}
+*/
+#sas-header,
+#sas-footer,
+#cookieBar,
+.breadcrumb,
+#bookmarkSidebar,
+#customer,
+.cookies-bar { display: none !important;}
+
+h1, h2, h3, h4, h5, h6, p, a {margin-left:0; padding-left:0;}
+
+[background-color] {
+    z-index:0;
+	position:relative;
+    -webkit-print-color-adjust:exact !important;
+}
+
+/*p {
+    -webkit-print-color-adjust:exact;
+	background:#006;
+    background-color:#00f;
+}*/

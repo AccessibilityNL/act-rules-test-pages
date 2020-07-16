@@ -1,0 +1,43 @@
+#icon-parkeergarage
+{
+	background:url(../img/icon-parkeergarage.gif) no-repeat;
+}
+#icon-penr
+{
+	background:url(../img/icon-penr.gif) no-repeat;
+}
+#icon-fietsenstalling
+{
+	background:url(../img/icon-fietsenstalling.gif) no-repeat;
+}
+#icon-taxistandplaats
+{
+	background:url(../img/icon-taxistandplaats.gif) no-repeat;
+}
+#icon-betaalpunt
+{
+    background:url(../img/icon-betaalpunt.gif) no-repeat;
+}
+
+#betaalpuntwrapper
+{
+    position: relative;
+    margin-bottom: 15px;
+    width: 124px;
+    height: 50px;
+}
+
+#betaalpuntbordje
+{
+    position: absolute;
+    background:url(../img/betaalpuntnummer.gif) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#betaalpuntnummer
+{
+    position: absolute;
+    font: bold 25px Arial, sans-serif;
+    padding: 10px 0 6px 40px;
+}

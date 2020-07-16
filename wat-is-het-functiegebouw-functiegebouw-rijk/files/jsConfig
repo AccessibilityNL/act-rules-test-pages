@@ -1,0 +1,1 @@
+define({"availableLibraries":{"jquery":"/webjars/jquery/1.11.1/jquery.min.js"},"jsConfig":{"flashMovie":"/assets/swf/DigitalJobStructureApplication_v32.swf","expressInstall":"/assets/swf/expressInstall.swf","downloadURL":"https://api.cso20.net","wvnlPlatformUrl":"http://www.werkenvoornederland.nl"}});

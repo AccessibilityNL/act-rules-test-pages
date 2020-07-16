@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+  <meta name="robots" content="nofollow, noindex">
+<!-- * Template voor de index pagina van de 2de laag * -->
+<!-- * Voor een uitgebreide beschrijving van de internet-huisstyle: * -->
+<!-- * http://bclrwn.knmi.nl/twiki/bin/view/KNMI/WebHome * -->
+  <link rel="stylesheet" href="files/rijksvinkstyle.css" type="text/css">
+  <script language="javascript" src="files/pop_picture_en.js"></script>
+  <!-- * Wijzig de title van de pagina * -->
+  <title>
+    TurboWin
+  </title>
+  <!-- Changed by: Martin Stam, 08-Feb-2005 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <!-- * Wijzig de 'author' * -->
+  <meta name="Martin Stam" content="">
+  <link rel="shortcut icon" href="http://projects.knmi.nl/favicon.ico">
+</head>
+<body>
+<script type="text/javascript" src="files/pop_page.js"></script>
+<script type="text/javascript" src="files/pop_picture.js"></script>
+<script type="text/javascript" src="files/change_font_size4.js"></script>
+<script type="text/javascript" src="files/cookies.js"></script>
+<script type="text/javascript" src="files/makelogicalpath.js"></script>
+<!-- 21-07-09: begin toevoeging voor de header -->
+
+<div class="container">
+   <div class="header">
+     <span></span>
+
+     <h1 class="branding"><img src="files/logo_knmi_venw_engels.png" alt="Royal Dutch Meteorological Institute; Ministery Of Infrastructure And The Environment" width="500" height="87"></h1>
+
+     <div class="nav_bar">
+
+		<!--<ul class="nav_main" id="nav_main">-->
+        <script language="JavaScript">
+		<!--
+		heelUrl = String(document.location);
+
+        // Strip eventuele parameters eraf
+        j = heelUrl.indexOf("?");
+        if ( j != -1) { heelUrl = heelUrl.substr(0,j); }
+        urlDelen = heelUrl.split("/");
+        var directoryIndex = urlDelen.length-1;
+
+        var rootDir = "/";
+        for (j=3; j<directoryIndex; j++) {
+	        rootDir = rootDir + urlDelen[j] +"/";
+	        //document.write(j+" - "+urlDelen[j]+" - "+rootDir+"<br>");
+        }
+
+        document.write('<ul class="nav_main" id="nav_main">');
+           document.write('<li class="sel"><!-- home --><a href="/'+urlDelen[3]+'" title="Home">Home</a></li>');
+        document.write('</ul>');
+
+		//-->
+		</script><ul class="nav_main" id="nav_main"><li class="sel"><!-- home --><a href="http://projects.knmi.nl/turbowin" title="Home">Home</a></li></ul>
+		<!--</ul>-->
+
+        <div class="search centered">
+           <form method="GET" action="/search/search.cgi" id="zoeken">
+              <!-- <fieldset>
+                 <legend>Zoeken</legend>
+                 <dl>
+                    <dd><input type="text" class="text" name="q" maxlength=255 value="" /></dd>
+                    <dd><input type="submit" name="submit" value="zoek" class="submit" /></dd>
+                 </dl>
+              </fieldset> -->
+           </form>
+        </div>
+
+     </div>
+
+  </div>
+
+  <div class="c1"><div class="c2">
+
+<div class="content">
+<!-- einde toevoeging voor de template -->
+
+<script type="text/javascript">
+<!--
+window.onLoad=init_prefs();
+var header_layout;
+var show_crumbpath= "No";
+
+var heelUrl = String(document.location);
+//alert("header: "+typeof klimaat);
+// Strip eventuele parameters eraf
+j = heelUrl.indexOf("?");
+if ( j != -1) { heelUrl = heelUrl.substr(0,j);}
+urlDelen = heelUrl.split("/");
+
+var ulContent = document.getElementById("nav_main").innerHTML;
+//alert(ulContent.indexOf('class=sel')+' - '+ulContent);
+if (ulContent.indexOf('class="sel"') > -1) ulContent = ulContent.replace(' class="sel"','');
+if (ulContent.indexOf('class=sel') > -1) ulContent = ulContent.replace(' class=sel','');
+//alert(ulContent.indexOf('class=sel')+' - '+ulContent);
+//alert(urlDelen[3]+" - "+in_array(urlDelen[3],Klimaat)+" - "+in_array(urlDelen[3],Over_het_knmi)+" - "+in_array(urlDelen[3],Weer)+" - "+in_array(urlDelen[3],Faq)+" - "+in_array(urlDelen[3],Seismologie));
+while(ulContent.indexOf('<LI>') > -1) ulContent = ulContent.replace('<LI>','<li>');
+
+if (in_array(urlDelen[3],Klimaat)) {
+   ulContent = ulContent.replace('<li><!-- klimaat -->','<li class="sel"><!-- klimaat -->');
+} else {
+
+   if (in_array(urlDelen[3],Over_het_knmi)) {
+      ulContent = ulContent.replace('<li><!-- over het knmi -->','<li class="sel"><!-- over het knmi -->');
+   } else {
+
+      if (in_array(urlDelen[3],Weer)) {
+         ulContent = ulContent.replace('<li><!-- weer -->','<li class="sel"><!-- weer -->');
+      } else {
+
+         if (in_array(urlDelen[3],Faq)) {
+            ulContent = ulContent.replace('<li><!-- faq -->','<li class="sel"><!-- faq -->');
+		 } else {
+
+			if (in_array(urlDelen[3],Seismologie)) {
+               ulContent = ulContent.replace('<li><!-- seismologie -->','<li class="sel"><!-- seismologie -->');
+            } else {
+
+			   if (urlDelen[3] == "research") {
+			      //alert(urlDelen[3]+" - "+urlDelen[4]+" - "+in_array(urlDelen[4],Research_seismologie));
+			      if (in_array(urlDelen[4],Research_weer)) {
+				     ulContent = ulContent.replace('<li><!-- weer -->','<li class="sel"><!-- weer -->');
+			      } else {
+				  	 //if (urlDelen[4].indexOf('limate')) {
+					 if (in_array(urlDelen[4],Research_klimaat)) {
+				        ulContent = ulContent.replace('<li><!-- klimaat -->','<li class="sel"><!-- klimaat -->');
+				     } else {
+					    if (in_array(urlDelen[4],Research_seismologie)) {
+				           ulContent = ulContent.replace('<li><!-- seismologie -->','<li class="sel"><!-- seismologie -->');
+				        }
+					 }
+				  }
+			   }
+			}
+		 }
+	  }
+   }
+}
+
+//alert(ulContent.indexOf('class="sel"')+" - "+ulContent);
+if (ulContent.indexOf('class="sel"') < 0) { ulContent = ulContent.replace('<li><!-- home -->','<li class="sel"><!-- home -->'); }
+//if (ulContent.indexOf('class=sel') < 0) { ulContent = ulContent.replace('<li><a href="/"','<li class="sel"><a href="/"'); }
+document.getElementById("nav_main").innerHTML = ulContent;
+//-->
+</script>
+<!--formatting table voor de brede paginastijl-->
+<noscript>
+[an error occurred while processing this directive]
+<!--<td><div style="width:150px;">150</div></td>-->
+</noscript><table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<script type="text/javascript">
+<!--
+if (header_layout != "Full") document.write('<td><div style="width:150px;"></div></td>');
+//-->
+</script><td><div style="width:150px;"></div></td>
+
+<td>
+   <script type="text/javascript">
+   <!-- cloaking
+//   if (show_crumbpath != "No") {
+      if (header_layout != "Full") {
+         document.write('<div class="kruimelpad">');
+      } else {
+	     if (show_crumbpath == "150") {
+		    document.write('<div class="kruimelpad230">');
+		 } else {
+            document.write('<div class="kruimelpadzonderwitruimte">');
+         }
+	  }
+	  if (show_crumbpath != "No") {
+         document.write(makeLogicalPath()+"</div>");
+      } else {
+	     document.write(makeLogicalPath()+"</div>");
+	  }
+   //-->
+   </script><div class="kruimelpad"><div id="kruimelpad"></div></div>
+<!-- De rest van de pagina-->
+<!-- EINDE HEADER INCLUDE -->
+
+
+
+
+  <table width="762" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+	<td rowspan="6" width="80"> </td><td colspan="3" valign="top"></td>
+	<td width="451" valign="top" align="left">
+	  <div id="printable" name="printable">
+
+	    <!-- * begin hieronder met de html-code * -->
+
+
+          <!-- * gebruik wel de "<div class=", etc * -->
+            <div class="rubriekkop">Software</div>
+
+	    <div class="hoofdkop">
+	      <!-- * vul hier de hoofdkop in * -->TurboWin
+	    </div>
+
+
+
+
+
+
+
+
+
+
+
+	    <div class="subkop">
+	      <!-- * vul hier (eventueel) subkop in (wel laten staan) * --><br>TurboWin version 5.5 for Windows (March 2017)
+	    </div>
+
+            <!-- * zet hier je plaatje : laat de rest van de settings staan * -->
+            <a href="javascript:pop_picture_en('images/view_0.png')"><img src="files/view_0_small.png" class="contentfoto" style="width:160px; margin-left: 11px;" valign="top" align="right"></a>
+
+
+
+	    <!-- * begin hier met de text * -->
+          TurboWin was developed at KNMI (Royal Netherlands Meteorological Institute) with contributions
+          from several National Meteorological Services and endorsed by the WMO (World Meteorological Organization)
+          and E-SURFMAR (European Surface Marine Programme). Meteorological observations made on board ships and fixed
+          sea stations are a substantial component of the World Weather Watch provided that the observation
+          are accurate and of high quality. The fixed sea stations and VOS (Voluntary Observing Ships) are key
+          components of the GOS (Global Observing System) and climate research. At the same time, however,
+          it has been recognised that these observations are subject to keying errors, coding errors,
+          calculating errors, etc.. To achieve an optimal control of the quality of the observations,
+          before they are used in real time, the quality control has to be carried out at the root,
+          by the observers themselves. TurboWin contains observation checking routines which are applied
+          on the observations before they are transmitted. TurboWin is a user-friendly system with over
+          200 built-in quality checks. It allows the automated compilation of observations on board ships
+          and fixed sea stations, their downloading to disk and their subsequent transmission ashore and
+          thence to a Meteorological Centre, by using Inmarsat, E-mail or other specific communication
+          facilities. The program assists the observer with many menus, pictures, photos, forms, help pages,
+          output options, automated calculations etc..
+
+
+
+
+	    <div class="subkop">
+	      <!-- * vul hier (eventueel) subkop in (wel laten staan) * --><br>TurboWin+ version 3.0 (November 2017)
+	    </div>
+
+            <!-- * zet hier je plaatje : laat de rest van de settings staan * -->
+            <a href="javascript:pop_picture_en('images/view_a.png')"><img src="files/view_a_small.png" class="contentfoto" style="width:160px; margin-left: 11px;" valign="top" align="right"></a>
+
+	    <!-- * begin hier met de text * -->
+            Like TurboWin (see above) TurboWin+ serves the same basic purpose of compiling observations.
+            So the observations reporting in stand alone mode is the same but the modules added to
+            TurboWin+ are different. E.g. TurboWin+ do not have the add-ons Pilot charts, MeteoClassify
+            and MetPub47 (see below) and not the option to report phenomena or drifting buoys and Floats deployments.
+            <br>
+            Features of TurboWin+ which are not available in TurboWin:
+            <li>Web mode (updates and obs direct via internet)</li>
+            <li>Displaying and inserting Vaisala barometer PTB330/PTB220 or Mintaka baromter Duo/Star data</li>
+            <li>EUCAWS (European Automatic Weather Station) interface</li>
+            <li>Running also on Linux and Mac OS</li>
+            <li>AMVER reporting</li>
+            <li>Position check on Google map (if internet available)</li>
+
+
+
+          <div class="subkop">
+	      <!-- * vul hier (eventueel) subkop in (wel laten staan) * --><br>MeteoClassify version 2.0 for Windows (April 2005)
+	    </div>
+
+	    <!-- * zet hier je plaatje : laat de rest van de settings staan * -->
+            <a href="javascript:pop_picture_en('images/example1.png')"><img src="files/example1_small.png" class="contentfoto" style="width:160px; margin-left: 11px;" valign="top" align="right"></a>
+
+
+
+          <!-- * begin hier met de text * -->
+          A trainings program from the developers of TurboWin. Test your knowledge of cloud, ice and sea state classification.
+          Download MeteoClassify
+
+
+
+
+
+
+
+
+
+          <div class="subkop">
+	      <!-- * vul hier (eventueel) subkop in (wel laten staan) * --><br><br><br><br><br>Ocean Wave Atlas version 2.0 for Windows and Linux (April 2004)
+	    </div>
+	    <!-- * zet hier je plaatje : laat de rest van de settings staan * -->
+
+            <a href="javascript:pop_picture_en('images/atlas.png')"><img src="files/atlas_small.png" class="contentfoto" style="width:160px; margin-left: 11px;" valign="top" align="right"></a>
+
+
+
+          <!-- * begin hier met de text * -->
+          Climate charts with wave height, direction and period. Climate is by definition the synthesis
+          of weather conditions in a given area, characterized by long-term statistics (mean values, standard
+          deviations, etc.) of the meteorological elements in that area. According to the World Meteorological
+          Organization (WMO) it should preferably be based on 30 years of data. To conform with this recommendation
+          the mean wave climate information we provide was based on 30 years of ERA-40  data from 1971 to 2000.
+          The data is of high quality, especially in terms of monthly means and other longer-term statistics,
+          when compared with competing datasets.
+
+
+
+
+
+
+         <div class="subkop">
+	      <!-- * vul hier (eventueel) subkop in (wel laten staan) * --><br>MetPub47 version 1.1 for Windows (March 2007)
+	    </div>
+
+	    <!-- * zet hier je plaatje : laat de rest van de settings staan * -->
+            <a href="javascript:pop_picture_en('images/metpub47.png')"><img src="files/metpub47_small.png" class="contentfoto" style="width:160px; margin-left: 11px;" valign="top" align="right"></a>
+
+
+
+          <!-- * begin hier met de text * -->
+          This program helps with collecting metadata for WMO
+Publication No. 47. WMO Publication No. 47 (Pub47),
+          the International List of Selected, Supplementary and
+Auxiliary Ships, contains details about the names, call signs,
+          ship layout, types of instrumentation and methods of
+observation used on VOS ships. It relies on the regular submission
+          of metadata from National Meteorological Services operating
+VOS programmes, nominally on a quarterly basis.
+          <br><br>
+          Accurate details about the method of observation and
+instrument type, instrument exposure, instrument calibration dates
+          and ship layout, are vital if the objectives and desired
+accuracies of (VOS) climate monitoring programs are to be achieved.
+
+
+	    <!-- * einde html * -->
+
+
+
+
+
+		<!-- * onderstaande 2 regels niet wijzigen *-->
+          </div> <!-- end printable section -->
+	</td>
+	<td width="11" valign="top"></td><td width="220" valign="top">
+
+        <!-- * begin hier met je links * -->
+	<div class="menukopje">Support</div>
+	<div class="menulink"><a href="http://projects.knmi.nl/turbowin/download.html">Download (freeware)</a></div>
+        <div class="menulink"><a href="http://projects.knmi.nl/turbowin/youtube_turbowin.html">TurboWin instructions (youtube)</a></div>
+        <div class="menulink"><a href="http://projects.knmi.nl/turbowin/history.html">TurboWin History</a></div>
+        <div class="menulink"><a href="http://projects.knmi.nl/turbowin/specifications.html">TurboWin Specifications</a></div>
+        <!-- <div class="menulink"><a href="fix/fix_45.html">TurboWin 4.5 fix if obs corrupted</a></div> -->
+        <div class="menulink"><a href="http://projects.knmi.nl/turbowin/contributing.html">TurboWin contributing National Meteorological Services</a></div>
+
+
+        <!-- <div class="menukopje">Waves</div> -->
+	<!-- <div class="menulink"><a href="waves_global.html">Waves Global</a></div> -->
+	<!-- <div class="menulink"><a href="waves_ns.html">Waves North Sea</a></div> -->
+	<!-- <div class="menulink"><a href="waves_na.html">Waves North Atlantic Ocean</a></div> -->
+        <!-- <div class="menulink"><a href="waves_sa.html">Waves South Atlantic Ocean</a></div> -->
+        <!-- <div class="menulink"><a href="waves_in.html">Waves Indian Ocean</a></div> -->
+	<!-- <div class="menulink"><a href="waves_np.html">Waves North Pacific Ocean</a></div> -->
+        <!-- <div class="menulink"><a href="waves_sp.html">Waves South Pacific Ocean</a></div> -->
+
+        <div class="menukopje">Climatological data</div>
+	  <div class="menulink"><a href="http://icoads.noaa.gov/" target="top">ICOADS (NOAA-NCAR)</a></div>
+        <div class="menulink"><a href="http://apps.ecmwf.int/datasets/" target="top">ECMWF ERA</a></div>
+        <div class="menulink"><a href="http://climexp.knmi.nl/" target="top">KNMI Climate Explorer</a></div>
+
+
+        <div class="menukopje">Global Relations</div>
+        <div class="menulink"><a href="http://www.bom.gov.au/jcomm/vos/" target="top">VOS Scheme</a></div>
+        <div class="menulink"><a href="http://www.wmo.int/pages/prog/amp/mmop/index_en.html" target="top">WMO Marine Program</a></div>
+        <div class="menulink"><a href="http://www.ncdc.noaa.gov/data-access/marineocean-data/vosclim" target="top">VOSClim (NOAA)</a></div>
+        <!-- <div class="menulink"><a href="http://esurfmar.meteo.fr" target="top">E-SURFMAR</a></div> -->
+
+        <!-- <div class="menukopje">Dutch continental plat observations</div> -->
+        <!-- DIT MOET LATER DE NIEUWE LOCATIE WORDEN VAN PLAT WAARNEMINGEN [ZIE HIERONDER] <div class="menulink"><a href="plat/plat_120.html">Dutch manned plat observations</a></div> -->
+        <!-- <div class="menulink"><a href="http://www.knmi.nl/onderzk/applied/turbowin/plat/plat_120.html">Dutch manned plat observations</a></div> -->
+
+
+        <div class="menukopje">Miscellaneous</div>
+        <div class="menulink"><a href="http://www.wmo.int/pages/prog/www/OSY/GOS.html" target="top">GOS</a></div>
+        <div class="menulink"><a href="http://www.wolkenatlas.de/" target="top">Karlsruher Cloud Album</a></div>
+        <div class="menulink"><a href="http://www.sterela.fr/en/solutions/station-meteo-neptune-217.php" target="top">Automatic Weather Station and TurboWin+</a></div>
+
+
+        <div class="menulink"><a href="http://esurfmar.meteo.fr/wikilog/index.php/Main_Page" target="top">The Marine Observers' Log</a></div>
+
+
+        <div class="menukopje">Contact</div>
+        <div class="menulink"><a href="mailto:pmo.office@knmi.nl&amp;subject=TurboWin">PMO Office</a></div>
+
+
+
+
+
+	<!-- en/of zet links in een include bestand -->
+
+
+	<!-- * einde links * -->
+	<!-- * einde toevoegen van de html-code *-->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- 21-07-2009: begin toevoeging voor de template -->
+
+<!--Afsluiting van de buitenste tabel-->
+</td>
+</tr>
+</tbody></table>
+<p><br>
+
+</p></div> <!-- EINDE 'content' div -->
+</div></div> <!-- EINDE 'c1', 'c2' div -->
+
+<div class="func_links" id="service_menu">
+   <h3>Service menu</h3>
+   <ul class="right">
+      <li><span id="printertje" style="display: inline;">
+             <!--<a href="javascript:printpage();"><img src="/images/rijksprintertje.gif" border=0 alt="Print this page" title="Print this page"></a>-->
+          </span>
+      </li>
+      <li><!--<a href="/contact/index_eng.html" title="Contact">Contact</a>--></li>
+      <script language="javascript">
+	  <!--
+	  if (typeof(nederlandse_url) != 'undefined' && nederlandse_url != null) {
+		  //document.write('<li><a href="'+nederlandse_url+'" title="Nederlands">Nederlands</a></li>');
+	  } else {
+		  //document.write('<li><a href="/" title="Nederlands">Nederlands</a></li>');
+	  }
+      //-->
+	  </script>
+      <noscript>
+	  <li><!--<a href="/" title="Nederlands">Nederlands</a>--></li>
+      </noscript>
+   </ul>
+   <ul class="left">
+      <!--include virtual="/library/php/check4IPv6.php"-->
+	  <!--<li><a href="/rss_feeds/"><img src="/images/rssgrey.png" border=0 alt="RSS feeds" title="RSS feeds"></a></li>
+      <li><a href="http://twitter.com/knmi" target="Twitter"><img src="/library/images/Twitter-icon14.png" border=0  alt="Volg het KNMI op Twitter - Follow KNMI on Twitter" title="Volg het KNMI op Twitter - Follow KNMI on Twitter"></a></li>
+
+      <li>Font size</li>
+      <li><a href="javascript:changeFontSize(-1);"><img src="/images/tsizemin.png" border=0 alt="Smaller font" title="Smaller font"></a>&nbsp;</li>
+      <li><a href="javascript:resetFontSize();"><img src="/images/tsizenul.png" border=0 alt="Standard font" title="Standard font"></a>&nbsp;</li>
+      <li><a href="javascript:changeFontSize(+1);"><img src="/images/tsizeplus.png" border=0 alt="Larger font" title="Larger font"></a></li>
+      -->
+   </ul>
+</div>
+
+<div class="footer">
+   <div class="ref"><img src="files/RO_footer.png" alt="Rijkshuisstijl footer" title="Rijkshuisstijl footer" width="500" height="25"></div>
+<span></span>
+   </div>
+
+
+</div> <!-- EINDE 'container' DIV -->
+
+<!-- einde toevoeging voor de template -->
+
+
+<!-- EINDE FOOTER INCLUDE -->
+<script type="text/javascript">
+<!-- cloaking
+
+function printpage() {
+  newwindow = window.open("","Printje","toolbar=0,location=0,status=0,menubar=0,scrollbars=1,width=600,height=600")
+  newwindow.document.open();
+  newwindow.focus();
+  newwindow.document.write("\<html\>\<head\>\<link rel='stylesheet' ");
+  newwindow.document.write("href='\/styles\/rijksvinkstyle.css' type='text\/css'\>\<\/head\>");
+  newwindow.document.write("\<body style='background-color: #ffffff;' onLoad='this.print();'\>");
+  var body = document.getElementById('printable').innerHTML;
+  newwindow.document.write(body);
+  newwindow.document.write("<\/body\>\<\/html\>");
+  newwindow.document.close();
+}
+
+   if (document.getElementById('printable')) {
+      var kiekeboe = document.getElementById('printertje');
+      kiekeboe.style.display = "inline";
+   }
+
+   if (document.getElementById('nederlandse_taal')) {
+      var kiekeboe = document.getElementById('nederlandse_taal');
+	  var newStr = "href=\""+kiekeboe.innerHTML+"\"";;
+
+      var kiekeboe = document.getElementById('dutch-language');
+	  kiekeboe.style.display = "inline";
+
+	  var oldStr = kiekeboe.innerHTML;
+ 	  kiekeboe.innerHTML = oldStr.replace(/href=\"\"/g,newStr);
+   }
+
+// uncloaking -->
+</script>
+
+
+
+
+</body></html>

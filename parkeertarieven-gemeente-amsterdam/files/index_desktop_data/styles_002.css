@@ -1,0 +1,261 @@
+#legenda
+{
+    height:540px;
+}
+
+#content
+{
+	float:left;
+	margin-top: 10px;
+	width: 100%;
+    /*border: 1px solid blue;*/
+
+}
+
+#content-left
+{
+	float: left;
+	width: 110px;
+    /*border: 1px solid green;*/
+
+}
+
+#content-right
+{
+	float: right;
+	width: 138px;
+    /*border: 1px solid red;*/
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul
+{
+	padding:0px 0 0 21px;
+}
+
+#spacer
+{
+    height: 10px;
+    width:190px;
+    margin: 0 0 10px 21px;
+    border-bottom: 1px solid #acacac;
+}
+
+#infoboxContent
+{
+    height: 190px;
+    padding-left: 3px;
+}
+
+#infoboxText
+{
+    overflow: hidden;
+}
+
+.tarieventabel
+{
+    /*border: 1px solid #cccccc;*/
+    /*border-spacing: 0px;*/
+    border-collapse: collapse;
+    border-right: 1px solid #cccccc;
+    /*table-layout: fixed;*/
+}
+
+.tarievenheader
+{
+     padding-left: 14px;
+}
+.tarievenuren
+ {
+     font:9px Verdana;
+     font-weight: bold;
+     letter-spacing: 0px;
+     color: #ababab;
+     border: 0px;
+     padding: 0px;
+     border-right: 1px solid #ffffff;
+ }
+
+.urencell
+{
+    width: 14px;
+    height: 12px;
+    overflow: hidden;
+    padding: 0px;
+}
+.darkhour
+{
+    color:#666464;
+}
+.daycell
+{
+    font:10px Verdana;
+    font-weight: bold;
+}
+
+.tarief
+{
+    border: 1px solid #cccccc;
+    padding: 0px;
+}
+
+.tarievencell
+{
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    padding: 0px;
+}
+.tarief-a
+{
+    background-color: #f6f607;
+}
+.tarief-b
+{
+    background-color: #f99f1c;
+}
+.tarief-c
+{
+    background-color: #f15c22;
+}
+.tarief-d
+{
+    background-color: #ed1c24;
+}
+.tarief-e
+{
+    background-color: #ec008c;
+}
+.tarief-f
+{
+    background-color: #00a3e8;
+}
+.tarief-g
+{
+    background-color: #772b90;
+}
+.tarief-h
+{
+    background-color: #621f41;
+}
+
+.tarief-icon-desc
+{
+    height: 38px;
+    float:left;
+}
+
+.tarief-icons
+{
+    height: 38px;
+    float: left;
+    padding: 15px 0 0 14px;
+    /*border: 1px solid blue;*/
+}
+
+.tarief-desc
+{
+    /*float:right;*/
+    /*padding-left: 15px;*/
+    line-height: 13px;
+    white-space: nowrap;
+    width: 90px;
+    font-weight: bold;
+}
+
+.icon
+{
+    /*margin-left: 6px;*/
+    /*margin-bottom: 6px;*/
+    padding: 0 6px 0 0;
+    width: 38px;
+    height: 38px;
+    float:left;
+}
+
+.icon-shade
+{
+    /*background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==");*/
+    /*background-image: linear-gradient(red, orange);*/
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 13px 13px 0;
+    border-color: transparent #333333 transparent transparent;
+    float:right;
+    margin-right: 1px;
+
+
+)
+
+}
+
+.tarief-shade
+{
+    /*background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==");*/
+    /*background-image: linear-gradient(red, orange);*/
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #333333 transparent transparent;
+    float:right;
+    margin-right: 1px;
+
+}
+
+
+
+.labelsmall
+{
+	vertical-align: middle;
+	padding-left: 6px;
+	font:100% Verdana, Geneva, sans-serif;
+	color:#ffffff;
+
+}
+
+
+#icon-tarief-5
+{
+	background:url(../img/icon-tarief-5.gif) no-repeat;
+}
+#icon-tarief-4
+{
+	background:url(../img/icon-tarief-4.gif) no-repeat;
+}
+#icon-tarief-3
+{
+	background:url(../img/icon-tarief-3.gif) no-repeat;
+}
+#icon-tarief-240
+{
+	background:url(../img/icon-tarief-2.40.gif) no-repeat;
+}
+#icon-tarief-140
+{
+	background:url(../img/icon-tarief-1.40.gif) no-repeat;
+}
+#icon-tarief-110
+{
+	background:url(../img/icon-tarief-1.10.gif) no-repeat;
+}
+#icon-tarief-130
+{
+    background:url(../img/icon-tarief-1.30.gif) no-repeat;
+}
+#icon-tarief-combi
+{
+	background:url(../img/icon-tarief-combi.gif) no-repeat;
+}
+#icon-tarief-maxduur
+{
+	background:url(../img/icon-tarief-maxduur.gif) no-repeat;
+}

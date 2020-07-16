@@ -1,0 +1,300 @@
+#sas-header {
+	background: #000099;
+	min-height: 72px;
+	width:100%;
+}
+#sas-header .wrapper {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#sas-header .burger {
+	display:block;
+	margin:29px 24px 0 0;
+	float:left
+}
+
+#sas-header nav a {
+	color:#fff;
+	display:inline-block
+}
+
+.sas-logo {
+    float: left;
+    margin: 12px 0 0 0;
+    padding:11px 24px 4px 0;
+}
+
+.sas-logo a { margin-right:0;}
+
+#header-primary-nav li { float: left;}
+
+#header-primary-nav li.hide { display:none}
+
+#header-primary-nav li a {
+	padding: 25px 26px 0 26px;
+	display: block;
+	height:72px;
+	position:relative;
+	font-family: 'ScandinavianRegular', Arial, Helvetica, sans-serif;
+	font-size:16px;
+	min-width:88px;
+	-webkit-font-smoothing: antialiased;
+}
+#header-primary-nav li.active {
+	background: #000098;
+	background: -moz-linear-gradient(top, #000098 0%, #020266 100%);
+	background: -webkit-linear-gradient(top, #000098 0%, #020266 100%);
+	background: linear-gradient(to bottom, #000098 0%, #020266 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000098', endColorstr='#020266', GradientType=0 );
+}
+#header-primary-nav li.active a {
+	cursor:default;
+	pointer-events:none;
+	}
+
+
+.secondary-nav { float:right}
+
+.secondary-nav li {
+    display: inline-block;
+    float: left;
+    padding: 25px 5px 0 5px;
+}
+.secondary-nav li a { margin:0}
+
+.secondary-nav li:last-child {
+    padding: 6px 5px 6px 16px;
+    border-left: 1px solid #0033cc;
+    margin: 15px 0 0 11px;
+}
+
+#bg-disable {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    bottom: 0;
+    top: 0;
+}
+#header-primary-nav li span { float:left;}
+
+#header-primary-nav li span.booking-notification {
+    background: #eb1932;
+    height: 15px;
+    min-width: 11px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    padding: 1px 4px 0 2px;
+    margin: -7px 0 0 -1px;
+}
+
+@media (min-width:992px) and (max-width:1130px) {
+
+	#sas-header .burger { margin: 29px 19px 0 8px;}
+	.secondary-nav { margin-right: 4px;}
+
+}
+
+
+
+
+.flag-NO { background-position:0 -486px}
+.flag-SE { background-position:0 -162px}
+.flag-FI { background-position:0 -1241px}
+.flag-US { background-position:0 -539px}
+.flag-GB { background-position:0 -701px}
+.flag-IE { background-position:0 -756px}
+.flag-SG { background-position:0 -270px}
+.flag-TH { background-position:0 -378px}
+.flag-LT { background-position:0 -594px}
+.flag-AU { background-position:0 -972px}
+.flag-IS { background-position:0 -864px}
+.flag-AT { background-position:0 -809px}
+.flag-DE { background-position:0 -1134px}
+.flag-FR { background-position:0 -1188px}
+.flag-IT { background-position:0 0}
+.flag-JP { background-position:0 -107px}
+.flag-HK { background-position:0 -1025px}
+.flag-CN { background-position:0 -1080px}
+.flag-CH { background-position:0 -215px}
+.flag-BE { background-position:0 -918px}
+.flag-NL { background-position:0 -647px}
+.flag-PL { background-position:0 -432px}
+.flag-RU { background-position:0 -324px}
+.flag-ES { background-position:0 -54px}
+.flag-DK { background-position:0 -1296px}
+.flag-LU { background-position:0 -1350px;}
+
+@media (max-width: 767px) {
+    #sas-header {min-height:55px; float:left;}
+	#header-primary-nav,  
+	.currency-points .travel-pass { display:none}
+	
+	.sas-logo {
+		border: none;
+		float: none;
+		margin: 3px auto 0 auto;
+		width: 72px;
+		padding: 14px 0 0 0;
+	}
+	.sas-logo img { height: auto;}
+
+	.burger, .profile {
+		position:absolute;
+		top:12px;
+		margin:0 !important
+	}
+	.burger {
+		top: 18px;
+		left:16px
+	}
+	.profile { right:16px}
+		
+	.secondary-nav li { display:none}
+	.secondary-nav li:last-child { display:block; margin:0; border:none}
+}
+
+.logged-user a {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-image: none;
+    background-color: #0087f5;
+    color: #fff;
+    text-indent: 0;
+    font-size: 12px;
+    padding: 8px 0 0 9px;
+}
+
+.logged-user .user-points {
+    color: #fff;
+    float: left;
+    margin: 7px 10px 0 0;
+}
+.user-points,
+.user-short-name { display:none}
+
+.logged-user .user-short-name,
+.logged-user .user-points { display:inline-block}
+
+
+@media (max-width: 767px) {
+	#bg-disable { display:none !important}
+	.logged-user .user-points { display:none !important}
+}
+
+/*New classes*/
+@media (min-width:768px) and (max-width:991px) {
+	#sas-header .burger {
+		margin: 29px 19px 0 16px;
+	}
+	.secondary-nav li:last-child {
+        margin-right: 10px;
+   }
+}
+@media (max-width: 991px) {
+ .secondary-nav .accessibility,
+ .secondary-nav .market-selector,
+ .currency-points .travel-pass { display:none}
+ .secondary-nav li:last-child { border:none}
+ #sas-header { padding:0}
+}
+
+.search-btn {
+    border: 1px solid #eae9e8;
+    border-left: 0;
+}
+.secondary-nav #accessibility {   
+ display: none;
+ }
+/*added due to vendorStyles conflict*/
+.logged-user .user-short-name, .logged-user .user-points,
+.market-menu-items li .country-name{
+
+    font-family: 'ScandinavianRegular', Arial, Helvetica, sans-serif;
+}
+.burger-menu li h3, .market-menu h3.head-country, .dropdown-native select {
+    color: #3f3d3a;
+}
+#sas-header .wrapper {
+    float: none;
+}
+
+/*added because vendorStyles were not loading*/
+body{margin:0; padding:0}
+#header-primary-nav ul {
+    margin: 0;
+}
+
+.icon-burger:hover, 
+.icon-profile:hover,
+.country-flag:hover,
+#header-primary-nav li a:hover {
+    opacity: 0.7;
+    }
+#header-primary-nav li.active a:hover {opacity:1;}
+
+#header-primary-nav li {
+    list-style: none;
+}
+#sas-header {
+    float: left;
+    clear: both;
+}
+body.cq-wcm-edit #sas-header,
+body.cq-wcm-design #sas-header {
+	float: none;
+}
+ul.secondary-nav {
+    margin: 0;
+}
+
+
+
+/*.no-svg [class^="icon"] { background:url(header/images/sprite.png) no-repeat; }*/
+
+
+
+
+.icon-logo    { width:72px; height:26px; background-position: right -57px}
+.icon-burger  { width:23px; height:17px; background-position: 0 -1699px}
+.icon-profile { width:32px; height:29px; background-position: 0 -61px}
+
+
+.icon-accessibility {width:24px; height:24px;}
+
+.icon-accessibility {background-position:0 -2874px}
+.icon-accessibility.active { background-position:0 -2928px}
+#sas-header #market-selector .arrow-curtain { display:none }
+.customer-wrap .input-set input[type=text],.customer-wrap .input-set input[type=password]{height:100%}
+
+@media (min-width:768px) and (max-width:991px) {
+  #header-primary-nav li a {
+        padding: 25px 9px 0 9px;
+        text-align: center;
+  }
+}
+
+/******* Start of Info Box *******/
+.info-box-alert {display:none;}
+.info-box-alert p { padding-right:20px}
+.info-box-alert .wrapper a {
+    color: #fff;
+    text-decoration: underline;
+}
+.info-box-alert.grey {
+    background: #bfbcb5;
+}
+
+
+.cookies-bar a {
+    color: #0087f5;
+}
